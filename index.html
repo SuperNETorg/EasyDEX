@@ -1,78 +1,69 @@
 <!DOCTYPE html>
 <html class="no-js css-menubar" lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-  <meta name="description" content="bootstrap admin template">
-  <meta name="author" content="">
-  <title>EasyDEX</title>
-  <link rel="apple-touch-icon" href="assets/images/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="assets/images/favicon-194x194.png" sizes="194x194">
-  <link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="assets/images/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16">
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="assets/global/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/global/css/bootstrap-extend.min.css">
-  <link rel="stylesheet" href="assets/global/css/alertify.css">
-  <link rel="stylesheet" href="assets/css/site.min.css">
-  <link rel="stylesheet" href="assets/css/progress-bars.css">
-  <link rel="stylesheet" href="assets/css/dashboard.css">
-  <link rel="stylesheet" href="assets/css/dashboard-wallet-widgets.css">
-  <!-- Plugins -->
-  <link rel="stylesheet" href="assets/global/vendor/animsition/animsition.min.css">
-  <link rel="stylesheet" href="assets/global/vendor/asscrollable/asScrollable.min.css">
-  <link rel="stylesheet" href="assets/global/vendor/jquery-scrollbar/jquery.scrollbar.css">
-  <link rel="stylesheet" href="assets/global/vendor/switchery/switchery.min.css">
-  <link rel="stylesheet" href="assets/global/vendor/intro-js/introjs.min.css">
-  <link rel="stylesheet" href="assets/global/vendor/slidepanel/slidePanel.min.css">
-  <!--<link rel="stylesheet" href="assets/global/vendor/flag-icon-css/flag-icon.min.css">-->
-  <link rel="stylesheet" href="assets/global/vendor/jquery-labelauty/jquery-labelauty.min.css">
-  <link rel="stylesheet" href="assets/global/vendor/bootstrap-toastr/toastr.min.css">
-  <link rel="stylesheet" href="assets/global/vendor/bootstrap-select/bootstrap-select.min.css">
-  <link rel="stylesheet" href="assets/global/vendor/sweetalert2/sweetalert2.min.css">
-  <link rel="stylesheet" href="assets/global/vendor/waves/waves.min.css">
-  <link rel="stylesheet" href="assets/global/vendor/alertify-js/alertify.min.css">
-  <link rel="stylesheet" href="assets/global/vendor/ladda-bootstrap/ladda.min.css">
-  <link rel="stylesheet" href="assets/global/vendor/nprogress/nprogress.min.css">
-  <link rel="stylesheet" href="assets/global/vendor/datatables-bootstrap/dataTables.bootstrap.min.css">
-  <link rel="stylesheet" href="assets/global/vendor/datatables-fixedheader/dataTables.fixedHeader.min.css">
-  <link rel="stylesheet" href="assets/global/vendor/datatables-responsive/dataTables.responsive.min.css">
-  <link id="loginStyle" rel="stylesheet" href="assets/pages/login.css">
-  <!-- Fonts -->
-  <link rel="stylesheet" href="assets/global/fonts/font-awesome/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/global/fonts/glyphicons/glyphicons.min.css">
-  <link rel="stylesheet" href="assets/global/fonts/material-design/material-design.min.css">
-  <link rel="stylesheet" href="assets/global/fonts/web-icons/web-icons.css">
-  <link rel="stylesheet" href="assets/global/fonts/brand-icons/brand-icons.min.css">
-  <!--<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>-->
-  <!--[if lt IE 9]>
-    <script src="assets/global/vendor/html5shiv/html5shiv.min.js"></script>
-    <![endif]-->
-  <!--[if lt IE 10]>
-    <script src="assets/global/vendor/media-match/media.match.min.js"></script>
-    <script src="assets/global/vendor/respond/respond.min.js"></script>
-    <![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    <title>EasyDEX</title>
+    <link rel="apple-touch-icon" href="assets/images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/images/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/images/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="assets/global/css/alertify.css">
+    <link rel="stylesheet" href="assets/css/site.min.css">
+    <link rel="stylesheet" href="assets/css/progress-bars.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/dashboard-wallet-widgets.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="assets/global/vendor/animsition/animsition.min.css">
+    <link rel="stylesheet" href="assets/global/vendor/asscrollable/asScrollable.min.css">
+    <link rel="stylesheet" href="assets/global/vendor/jquery-scrollbar/jquery.scrollbar.css">
+    <link rel="stylesheet" href="assets/global/vendor/switchery/switchery.min.css">
+    <link rel="stylesheet" href="assets/global/vendor/intro-js/introjs.min.css">
+    <link rel="stylesheet" href="assets/global/vendor/slidepanel/slidePanel.min.css">
+    <!--<link rel="stylesheet" href="assets/global/vendor/flag-icon-css/flag-icon.min.css">-->
+    <link rel="stylesheet" href="assets/global/vendor/jquery-labelauty/jquery-labelauty.min.css">
+    <link rel="stylesheet" href="assets/global/vendor/bootstrap-toastr/toastr.min.css">
+    <link rel="stylesheet" href="assets/global/vendor/bootstrap-select/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/global/vendor/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" href="assets/global/vendor/waves/waves.min.css">
+    <link rel="stylesheet" href="assets/global/vendor/alertify-js/alertify.min.css">
+    <link rel="stylesheet" href="assets/global/vendor/ladda-bootstrap/ladda.min.css">
+    <link rel="stylesheet" href="assets/global/vendor/nprogress/nprogress.min.css">
+    <link rel="stylesheet" href="assets/global/vendor/datatables-bootstrap/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="assets/global/vendor/datatables-fixedheader/dataTables.fixedHeader.min.css">
+    <link rel="stylesheet" href="assets/global/vendor/datatables-responsive/dataTables.responsive.min.css">
+    <link rel="stylesheet" href="assets/pages/login.css" id="loginStyle">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/global/fonts/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/global/fonts/glyphicons/glyphicons.min.css">
+    <link rel="stylesheet" href="assets/global/fonts/material-design/material-design.min.css">
+    <link rel="stylesheet" href="assets/global/fonts/web-icons/web-icons.css">
+    <link rel="stylesheet" href="assets/global/fonts/brand-icons/brand-icons.min.css">
+    <link rel="stylesheet" href="assets/skins/orange.min.css" id="skinStyle">
 
-  <!-- Node.js scripts -->
-  <script type="text/javascript">
-  //window.$ = window.jQuery = require('jquery');
-  //window.toastr = require('toastr');
-  </script>
-  <!-- Node.js scripts -->
+    <!--<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>-->
+    <!--[if lt IE 9]>
+      <script src="assets/global/vendor/html5shiv/html5shiv.min.js"></script>
+      <![endif]-->
+    <!--[if lt IE 10]>
+      <script src="assets/global/vendor/media-match/media.match.min.js"></script>
+      <script src="assets/global/vendor/respond/respond.min.js"></script>
+      <![endif]-->
 
-  <!-- Scripts -->
-  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
-  <script src="assets/global/vendor/modernizr/modernizr.min.js"></script>
-  <script src="assets/global/vendor/breakpoints/breakpoints.min.js"></script>
-  <script>
-  //Breakpoints();
-  </script>
-  <script>if (window.module) module = window.module;</script>
-  <link id="skinStyle" href="assets/skins/orange.min.css" rel="stylesheet" type="text/css">
-</head>
+    <!-- Scripts -->
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+    <script src="assets/global/vendor/modernizr/modernizr.min.js"></script>
+    <script src="assets/global/vendor/breakpoints/breakpoints.min.js"></script>
+    <script>if (window.module) module = window.module;</script>
+  </head>
 <body class="page-login layout-full page-dark">
 
 <!-- START ADD COIN DIV -->
@@ -82,15 +73,15 @@
     tabindex="-1">
       <div class="modal-dialog modal-center modal-md">
         <div class="modal-content">
-          <div class="modal-header bg-orange-a400 wallet-send-header" style="border-radius: 3px 3px 0 0;">
+          <div class="modal-header bg-orange-a400 wallet-send-header" style="border-radius: 3px 3px 0 0">
             <!--<button type="button" class="close white" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>-->
-            <h4 class="modal-title white"><span class="icon fa-refresh" style="margin: 0;"></span> Refreshing Basilisk Network Connections... <span id="mdl_receive_coin_name"></span></h4>
+            <h4 class="modal-title white"><span class="icon fa-refresh" style="margin: 0"></span> Refreshing Basilisk Network Connections... <span id="mdl_receive_coin_name"></span></h4>
             <!--<span class="white">This is your default Iguana wallet address.</span>-->
           </div>
-          <div class="modal-body" style="text-align: center;">
-            <div class="loader-wrapper active" style="display: none;">
+          <div class="modal-body" style="text-align: center">
+            <div class="loader-wrapper active" style="display: none">
               <div class="loader-layer loader-blue">
                 <div class="loader-circle-left">
                   <div class="circle"></div>
@@ -130,7 +121,7 @@
             </div>
             <h5 class="text-left"><span id="basilisk-connections-refresh-title">-</span> <span class="pull-right" id="basilisk-connections-refresh-percent">-</span></h5>
             <div class="progress progress-sm">
-            <div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 0%; font-size: 80%;" role="progressbar" data-edexcoin="COIN" id="basilisk-connections-refresh-progress-bar"></div>
+            <div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 0%; font-size: 80%" role="progressbar" data-edexcoin="COIN" id="basilisk-connections-refresh-progress-bar"></div>
             </div>
             <pre data-edexcoin="COIN" id="basilisk-connections-refresh-status-output"></pre>
           </div>
@@ -174,10 +165,10 @@
                   </select>
                 </div>
               </div>
-              <div class="col-sm-4" style="text-align: center;">
+              <div class="col-sm-4" style="text-align: center">
               <button type="button" class="btn btn-primary mdl_addcoin_done_btn" data-toggle="modal" data-dismiss="modal" id="mdl_addcoin_done_btn">Activate Coin</button>
               </div>
-              <div class="col-sm-12" style="text-align: center;">
+              <div class="col-sm-12" style="text-align: center">
                 <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-6 style-addcoin-lbl-mdl">
                   <input type="radio" class="to-labelauty labelauty" name="addcoin_select_mode_mdl" data-plugin="labelauty" id="addcoin_mdl_full_mode" data-labelauty="Full Mode|Full Mode" value="1" checked>
                 </div>
@@ -218,7 +209,7 @@
         <img class="brand-img" src="assets/images/easydex-logo-big.png" alt="SuperNET Iguana">
       </div>
       <!-- BEGIN IE Warning -->
-      <div id="section-ie-warning" style="display: none;">
+      <div id="section-ie-warning" style="display: none">
           <!-- Example Panel Alert -->
           <div class="panel">
             <div class="panel-heading">
@@ -232,7 +223,7 @@
               The current version of EasyDEX-GUI doesn't support Internet Explorer.
             </div>
             <div class="panel-body">
-              <p style="color: #424242;">Please use either <a href="https://www.google.com/chrome/">Google Chrome</a> or <a href="https://www.firefox.com">Mozilla FireFox</a> to use EasyDEX-GUI. Please click on browser's logo to visit website for installation instructions.</p>
+              <p style="color: #424242">Please use either <a href="https://www.google.com/chrome/">Google Chrome</a> or <a href="https://www.firefox.com">Mozilla FireFox</a> to use EasyDEX-GUI. Please click on browser's logo to visit website for installation instructions.</p>
               <div class="col-sm-6 col-xs-6">
                 <a href="https://www.google.com/chrome/"><img class="brand-img" src="assets/images/browsers/chrome.png" alt="Google Chrome"></a>
               </div>
@@ -245,9 +236,9 @@
       </div>
       <!-- END IE Warning -->
       <!-- BEGIN section login -->
-      <div id="section-login" style="display: none;">
-      <h4 style="color: #fff;" id="login-welcome">Welcome. Please login.</h4>
-      <form class="login-form" method="post" action="javascript:;" autocomplete="off" onsubmit="return false;">
+      <div id="section-login" style="display: none">
+      <h4 style="color: #fff" id="login-welcome">Welcome. Please login.</h4>
+      <form class="login-form" method="post" action="javascript:" autocomplete="off" onsubmit="return false">
         <div class="form-group form-material floating">
           <input type="password" class="form-control" name="password" id="password">
           <label class="floating-label" for="inputPassword">Wallet Seed</label>
@@ -262,7 +253,7 @@
           <!-- START BITCOIN COIN OPTIONS -->
           <!--<div class="col-sm-12">
           <div class="col-sm-3">
-            <div class="checkbox-custom checkbox-default" style="margin-top: 0px; text-align: left;">
+            <div class="checkbox-custom checkbox-default" style="margin-top: 0px; text-align: left">
               <input type="checkbox" id="logincoinbtc" value="BTC" name="logincoinbtc" checked="" autocomplete="off">
               <label for="logincoinbtc">Bitcoin</label>
             </div>
@@ -284,7 +275,7 @@
           <!-- START BITCOIN COIN OPTIONS -->
           <!--<div class="col-sm-12">
           <div class="col-sm-3">
-            <div class="checkbox-custom checkbox-default" style="margin-top: 0px; text-align: left;">
+            <div class="checkbox-custom checkbox-default" style="margin-top: 0px; text-align: left">
               <input type="checkbox" id="logincoinbtcd" value="BTCD" name="logincoinbtcd" checked="" autocomplete="off">
               <label for="logincoinbtcd">BitcoinDark</label>
             </div>
@@ -306,7 +297,7 @@
           <!-- START BITCOIN COIN OPTIONS -->
           <!--<div class="col-sm-12">
           <div class="col-sm-3">
-            <div class="checkbox-custom checkbox-default" style="margin-top: 0px; text-align: left;">
+            <div class="checkbox-custom checkbox-default" style="margin-top: 0px; text-align: left">
               <input type="checkbox" id="logincoinkmd" value="KMD" name="logincoinkmd" checked="" autocomplete="off">
               <label for="logincoinkmd">Komodo</label>
             </div>
@@ -334,8 +325,8 @@
 
       <!-- BEGIN section login add coin -->
       <div id="section-login-addcoin-btn">
-        <h4 style="color: #fff;" id="login-welcome">Welcome. Please add coin to start.</h4>
-        <div class="form-group form-material floating" style="width: 540px; margin: 30px 0;">
+        <h4 style="color: #fff" id="login-welcome">Welcome. Please add coin to start.</h4>
+        <div class="form-group form-material floating" style="width: 540px; margin: 30px 0">
         <button class="btn btn-lg btn-primary btn-block ladda-button" id="start-coin-login" role="menuitem" data-edexcoinmenu="COIN" data-target="#AddCoinDilogModel-login" data-toggle="modal" data-style="expand-left" data-plugin="ladda"><span class="ladda-label">Activate Coin</span></button>
         </div>
       </div>
@@ -343,9 +334,9 @@
 
 
       <!-- BEGIN section register -->
-      <div id="section-register" style="display: none;">
-      <form class="register-form" method="post" role="form" autocomplete="off" onsubmit="return false;">
-        <h4 class="hint" style="color: #fff;"> Please select compatible wallet seed type: </h4>
+      <div id="section-register" style="display: none">
+      <form class="register-form" method="post" role="form" autocomplete="off" onsubmit="return false">
+        <h4 class="hint" style="color: #fff"> Please select compatible wallet seed type: </h4>
         <div class="form-group form-material floating">
           <div class="radio-custom radio-default radio-inline">
             <input type="radio" id="PassPhraseOptionsIguana" value="PassPhraseOptionsIguana" name="PassPhraseOptions" checked="">
@@ -361,14 +352,14 @@
           </div>
         </div>
         <div class="form-group form-material floating">
-          <textarea class="form-control placeholder-no-fix" type="text" placeholder="" name="walletseed" id="walletseed" style="height: 100px;"></textarea>
+          <textarea class="form-control placeholder-no-fix" type="text" placeholder="" name="walletseed" id="walletseed" style="height: 100px"></textarea>
           <label class="floating-label" for="walletseed">Wallet Seed</label>
         </div>
         <div class="form-group form-material floating">
-          <textarea class="form-control placeholder-no-fix" type="text" placeholder="" name="rwalletseed" id="rwalletseed" style="height: 100px;"></textarea>
+          <textarea class="form-control placeholder-no-fix" type="text" placeholder="" name="rwalletseed" id="rwalletseed" style="height: 100px"></textarea>
           <label class="floating-label" for="rwalletseed">Confirm Wallet Seed</label>
         </div>
-        <!--<h4 class="hint" style="color: #fff;"> Please enter password for new wallet: </h4>
+        <!--<h4 class="hint" style="color: #fff"> Please enter password for new wallet: </h4>
         <div class="form-group form-material floating">
           <input type="text" class="form-control" id="register_password" name="password">
           <label class="floating-label" for="register_password">Password</label>
@@ -426,7 +417,7 @@
                   </select>
                 </div>
               </div>
-              <div class="col-sm-4" style="text-align: center;">
+              <div class="col-sm-4" style="text-align: center">
               <button type="button" class="btn btn-primary mdl_addcoin_done_btn-login" data-toggle="modal" data-dismiss="modal" id="mdl_addcoin_done_btn-login">Activate Coin</button>
               </div>
               <div class="col-sm-12 text-center">
@@ -460,7 +451,7 @@
 
 
   <!-- BEGIN Wallet Core Pages -->
-  <div id="wallet-core" style="display: none;">
+  <div id="wallet-core" style="display: none">
   <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided"
@@ -488,7 +479,7 @@
       <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
         <!-- Navbar Toolbar -->
         <ul class="nav navbar-toolbar">
-          <li class="hidden-float" id="toggleMenubar" style="display: none;">
+          <li class="hidden-float" id="toggleMenubar" style="display: none">
             <a data-toggle="menubar" href="#" role="button">
               <i class="icon hamburger hamburger-arrow-left">
                   <span class="sr-only">Toggle menubar</span>
@@ -505,7 +496,7 @@
         <!-- End Navbar Toolbar -->
         <!-- Navbar Toolbar Right -->
         <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
-        <li role="presentation"><a href="javascript:void(0)" role="menuitem" data-edexcoinmenu="COIN" id="btn_edexcoin_addcoin" data-target="#AddCoinDilogModel" data-toggle="modal" style="padding-bottom: 10px; padding-top: 16px;">
+        <li role="presentation"><a href="javascript:void(0)" role="menuitem" data-edexcoinmenu="COIN" id="btn_edexcoin_addcoin" data-target="#AddCoinDilogModel" data-toggle="modal" style="padding-bottom: 10px; padding-top: 16px">
             <span>
               <img src="assets/images/icons/activatecoin.png" alt="Add Coin">
             </span>
@@ -542,47 +533,47 @@
       <!-- End Navbar Collapse -->
     </div>
   </nav>
-  <div class="site-menubar site-menubar-dark" style="display: none;">
+  <div class="site-menubar site-menubar-dark" style="display: none">
     <div class="site-menubar-body">
       <ul class="site-menu">
         <li class="site-menu-item" id="nav-dashboard">
-          <a class="animsition-link" href="javascript:;">
+          <a class="animsition-link" href="javascript:">
             <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
             <span class="site-menu-title">Dashboard</span>
           </a>
         </li>
         <li class="site-menu-item" id="nav-easydex">
-          <a class="animsition-link" href="javascript:;">
+          <a class="animsition-link" href="javascript:">
             <i class="site-menu-icon fa-exchange" aria-hidden="true"></i>
             <span class="site-menu-title">EasyDEX</span>
           </a>
         </li>
         <li class="site-menu-item" id="nav-komodo-wallet">
-          <a class="animsition-link" href="javascript:;">
-            <i class="site-menu-icon" aria-hidden="true"><img src="assets/images/icons/komodo_icon_grey.png" alt="" style="width: 25px;"></i>
+          <a class="animsition-link" href="javascript:">
+            <i class="site-menu-icon" aria-hidden="true"><img src="assets/images/icons/komodo_icon_grey.png" alt="" style="width: 25px"></i>
             <span class="site-menu-title">Komodo Wallet</span>
           </a>
         </li>
         <li class="site-menu-item" id="nav-zcash-wallet">
-          <a class="animsition-link" href="javascript:;">
-            <i class="site-menu-icon" aria-hidden="true"><img src="assets/images/icons/zcash_icon_grey.png" alt="" style="width: 25px;"></i>
+          <a class="animsition-link" href="javascript:">
+            <i class="site-menu-icon" aria-hidden="true"><img src="assets/images/icons/zcash_icon_grey.png" alt="" style="width: 25px"></i>
             <span class="site-menu-title">Zcash Wallet</span>
           </a>
         </li>
         <li class="site-menu-item" id="nav-iguana-atomic-explorer">
-          <a class="animsition-link" href="javascript:;">
+          <a class="animsition-link" href="javascript:">
             <i class="site-menu-icon fa-cubes" aria-hidden="true"></i>
             <span class="site-menu-title">Atomic Explorer</span>
           </a>
         </li>
         <li class="site-menu-item" id="nav-iguana-wallet-settings">
-          <a class="animsition-link" href="javascript:;">
+          <a class="animsition-link" href="javascript:">
             <i class="site-menu-icon icon md-settings" aria-hidden="true"></i>
             <span class="site-menu-title">Wallet Settings</span>
           </a>
         </li>
         <li class="site-menu-item" id="nav-about-iguana">
-          <a class="animsition-link" href="javascript:;">
+          <a class="animsition-link" href="javascript:">
             <i class="site-menu-icon fa-info-circle" aria-hidden="true"></i>
             <span class="site-menu-title">About Iguana</span>
           </a>
@@ -591,7 +582,7 @@
     </div>
   </div>
   <!-- Page -->
-  <div class="page animsition" style="margin-left: 0px;">
+  <div class="page animsition" style="margin-left: 0px">
   <!-- Wallet Widgets Sidebar -->
     <div class="page-aside">
       <div class="page-aside-switch">
@@ -600,7 +591,7 @@
       </div>
       <div class="page-aside-inner">
         <!-- Search Panel -->
-        <div class="search-wallet-widgets panel" style="display: none;">
+        <div class="search-wallet-widgets panel" style="display: none">
           <div class="panel-heading">
             <div class="panel-actions">
               <div class="input-search input-group-sm">
@@ -639,10 +630,10 @@
         <li class="header-easydex-section">Dashboard</li>
         <!--<li class="active">You are Here</li>-->
       </ol>
-      <div class="page-header-actions" style="z-index: 1;">
+      <div class="page-header-actions" style="z-index: 1">
         <!-- KMD Wallet Header button -->
         <div id="kmd_header_button">
-          <button type="button" id="easydex_kmd_wallet_actions_header" class="bg-teal-500 btn btn-floating white waves-effect waves-float waves-light" data-toggle="dropdown" aria-expanded="false" style="display: none;"><i class="icon md-plus" aria-hidden="true"></i></button>
+          <button type="button" id="easydex_kmd_wallet_actions_header" class="bg-teal-500 btn btn-floating white waves-effect waves-float waves-light" data-toggle="dropdown" aria-expanded="false" style="display: none"><i class="icon md-plus" aria-hidden="true"></i></button>
           <ul class="dropdown-menu animate dropdown-menu-right" aria-labelledby="easydex_kmd_wallet_actions_header" role="menu" style="">
             <li role="presentation"><a href="javascript:void(0)" role="menuitem" data-extcoin-menu="KMD" id="btn_kmd_wallet_dashboard">Dashboard</a></li>
             <li role="presentation"><a href="javascript:void(0)" role="menuitem" data-extcoin-menu="KMD" id="btn_kmd_wallet_send">Send</a></li>
@@ -655,7 +646,7 @@
         <!-- End KMD Wallet Header button -->
         <!-- ZEC Wallet Header button -->
         <div id="zec_header_button">
-          <button type="button" id="easydex_zec_wallet_actions_header" class="bg-yellow-600 btn btn-floating white waves-effect waves-float waves-light" data-toggle="dropdown" aria-expanded="false" style="display: none;"><i class="icon md-plus" aria-hidden="true"></i></button>
+          <button type="button" id="easydex_zec_wallet_actions_header" class="bg-yellow-600 btn btn-floating white waves-effect waves-float waves-light" data-toggle="dropdown" aria-expanded="false" style="display: none"><i class="icon md-plus" aria-hidden="true"></i></button>
           <ul class="dropdown-menu animate dropdown-menu-right" aria-labelledby="easydex_zec_wallet_actions_header" role="menu" style="">
             <li role="presentation"><a href="javascript:void(0)" role="menuitem" data-extcoin-menu="ZEC" id="btn_zec_wallet_dashboard">Dashboard</a></li>
             <li role="presentation"><a href="javascript:void(0)" role="menuitem" data-extcoin-menu="ZEC" id="btn_zec_wallet_send">Send</a></li>
@@ -694,20 +685,20 @@
     <div class="page-main" id="section-dashboard" data-edexcoin="COIN">
       <div id="edex-footer" data-edexcoin="COIN">
         <div class="row no-space " data-edexcoin="COIN">
-          <div data-edexcoin="COIN" id="currency-progressbars" style="display: none;">
+          <div data-edexcoin="COIN" id="currency-progressbars" style="display: none">
             <div class="progress progress-sm">
-            <div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 0%; font-size: 80%;" role="progressbar" data-edexcoin="COIN" id="currency-bundles">Bundles <span data-edexcoin="COIN" id="currency-bundles-percent">0%</span></div>
+            <div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 0%; font-size: 80%" role="progressbar" data-edexcoin="COIN" id="currency-bundles">Bundles <span data-edexcoin="COIN" id="currency-bundles-percent">0%</span></div>
             </div>
           </div>
-          <div data-edexcoin="COIN" id="additional-progress-bars" style="display: none;">
+          <div data-edexcoin="COIN" id="additional-progress-bars" style="display: none">
             <div class="progress progress-sm">
-              <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 0%; font-size: 80%;" role="progressbar" data-edexcoin="COIN" id="currency-utxo">utxo <span data-edexcoin="COIN" id="currency-utxo-percent">0%</span></div>
+              <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 0%; font-size: 80%" role="progressbar" data-edexcoin="COIN" id="currency-utxo">utxo <span data-edexcoin="COIN" id="currency-utxo-percent">0%</span></div>
             </div>
               <div class="progress progress-sm">
-              <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 0%; font-size: 80%;" role="progressbar" data-edexcoin="COIN" id="currency-balances">Balances <span data-edexcoin="COIN" id="currency-balances-percent">0%</span></div>
+              <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 0%; font-size: 80%" role="progressbar" data-edexcoin="COIN" id="currency-balances">Balances <span data-edexcoin="COIN" id="currency-balances-percent">0%</span></div>
             </div>
               <div class="progress progress-sm">
-              <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 0%; font-size: 80%;" role="progressbar" data-edexcoin="COIN" id="currency-validated">Validated <span data-edexcoin="COIN" id="currency-validated-percent">0%</span></div>
+              <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 0%; font-size: 80%" role="progressbar" data-edexcoin="COIN" id="currency-validated">Validated <span data-edexcoin="COIN" id="currency-validated-percent">0%</span></div>
             </div>
           </div>
         </div><!-- END additional-progress-bars -->
@@ -719,19 +710,19 @@
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
-          <span style="font-size:24px; text-align: center;"><i class="icon fa-paw" aria-hidden="true"></i> NO WALLET SELECTED</span><br>Please select a wallet from active coins list on left</a>.
+          <span style="font-size:24px; text-align: center"><i class="icon fa-paw" aria-hidden="true"></i> NO WALLET SELECTED</span><br>Please select a wallet from active coins list on left</a>.
         </div>
       </div>
 
     <!-- Begin page header -->
-      <div class="page-header page-header-bordered header-easydex" id="header-dashboard" data-edexcoin="COIN" style="display: none;">
+      <div class="page-header page-header-bordered header-easydex" id="header-dashboard" data-edexcoin="COIN" style="display: none">
       <ol class="breadcrumb" data-edexcoin="COIN">
         <b>My <span data-edexcoin="COIN" id="edexcoin-active">-</span> Address: </b> <span data-edexcoin="COIN" id="edexcoin_active_addr">-</span> <button class="btn btn-default btn-xs clipboard-edexaddr" data-edexcoin="COIN" id="edexcoin_active_addr_clipboard" data-clipboard-text=""><i class="icon wb-copy" aria-hidden="true"></i> copy</button>
       </ol>
       <div class="page-header-actions" data-edexcoin="COIN" id="edexcoin-actions">
         <!-- EasyDEX Coin Wallet Header button -->
         <div id="kmd_header_button">
-          <button type="button" class="btn btn-dark waves-effect waves-light" data-edexcoinmenu="COIN" id="btn_edexcoin_dashboard" style="display: none;"><i class="icon md-view-dashboard" aria-hidden="true"></i> Dashboard</button>
+          <button type="button" class="btn btn-dark waves-effect waves-light" data-edexcoinmenu="COIN" id="btn_edexcoin_dashboard" style="display: none"><i class="icon md-view-dashboard" aria-hidden="true"></i> Dashboard</button>
           <button type="button" class="btn btn-primary waves-effect waves-light" data-edexcoinmenu="COIN" id="btn_edexcoin_send"><i class="icon fa-send" aria-hidden="true"></i> Send</button>
           <button type="button" class="btn btn-info waves-effect waves-light" data-edexcoinmenu="COIN" id="btn_edexcoin_recieve"><i class="icon fa-inbox" aria-hidden="true"></i> Receive</button>
 
@@ -747,17 +738,17 @@
           <!--</ul>-->
         </div>
         <!-- End EasyDEX Coin Wallet Header button -->
-        <!--<button type="button" class="btn btn-primary btn-floating btn-sm" style="font-size: 1.072rem;" data-edexcoin="COIN" id="edexcoin-actions-btn">
+        <!--<button type="button" class="btn btn-primary btn-floating btn-sm" style="font-size: 1.072rem" data-edexcoin="COIN" id="edexcoin-actions-btn">
 
           <i class="icon wb-plus" aria-hidden="true"></i>
         </button>-->
       </div>
     </div>
     <!-- End page header -->
-      <div class="" id="wallet-widgets" data-plugin="masonry" data-edexcoin="COIN" style="display: none;">
+      <div class="" id="wallet-widgets" data-plugin="masonry" data-edexcoin="COIN" style="display: none">
         <div class="col-xs-12">
           <div class="col-xs-12">
-        <div role="alert" class="alert alert-info alert-dismissible" data-edexcoin="COIN" id="edexcoin-wallet-waitingrt-alert" style="display: none;">
+        <div role="alert" class="alert alert-info alert-dismissible" data-edexcoin="COIN" id="edexcoin-wallet-waitingrt-alert" style="display: none">
           <button aria-label="Close" data-dismiss="alert" class="close" type="button"><span aria-hidden="true">×</span></button>
           <h4>Activating wallet once Real Time blocks starts syncing...</h4>
         <p data-edexcoin="COIN" id="edexcoin-wallet-waitingrt-alert-text">An Iguana Full Mode coin synchronizes the blockchain using an entirely different format than traditional blockchain software. Iguana's Full Mode uses Memory Mapped Files and stores data in bundles. That's why you see four different colored synchronizing progress bars.</p>
@@ -767,7 +758,7 @@
         <p style="font-weight: 600">Please wait for all other progress bars to disappear and the first blue bar turns to green.<br>That would mean the wallet is in Real Time Sync mode.</p>
         </div>
 
-        <div role="alert" class="alert alert-info alert-dismissible" data-edexcoin="COIN" id="edexcoin-wallet-waitingcache-alert" style="display: none;">
+        <div role="alert" class="alert alert-info alert-dismissible" data-edexcoin="COIN" id="edexcoin-wallet-waitingcache-alert" style="display: none">
           <button aria-label="Close" data-dismiss="alert" class="close" type="button"><span aria-hidden="true">×</span></button>
           <h4>Fetching coin data from network. Please wait...</h4>
         <p data-edexcoin="COIN" id="edexcoin-wallet-waitingrt-alert-text">An Iguana Full Mode coin synchronizes the blockchain using an entirely different format than traditional blockchain software. Iguana's Full Mode uses Memory Mapped Files and stores data in bundles. That's why you see four different colored synchronizing progress bars.</p>
@@ -787,7 +778,7 @@
                     <div class="pull-left padding-vertical-10">
                       <i class="icon fa-eye font-size-24 vertical-align-bottom margin-right-5"></i>Balance
                     </div>
-                    <span class="pull-right padding-top-10" data-edexcoin="COIN" style="font-size: 22px;"><span data-edexcoin="COIN" id="edex_total_balance"></span> <span data-edexcoin="COIN" id="edex_total_balance_coincode"></span></span>
+                    <span class="pull-right padding-top-10" data-edexcoin="COIN" style="font-size: 22px"><span data-edexcoin="COIN" id="edex_total_balance"></span> <span data-edexcoin="COIN" id="edex_total_balance_coincode"></span></span>
                   </div>
                 </div>
               </div>
@@ -795,7 +786,7 @@
             <!-- End EasyDEX Total Balance Widget -->
           </div>
 
-          <div class="col-lg-4 col-xs-12" data-edexcoin="COIN" id="edexcoin_getbalance_interest" style="display: none;">
+          <div class="col-lg-4 col-xs-12" data-edexcoin="COIN" id="edexcoin_getbalance_interest" style="display: none">
             <!-- EasyDEX Interest Balance Widget-->
             <div class="widget widget-shadow" id="widgetLineareaOne">
               <div class="widget-content">
@@ -804,7 +795,7 @@
                     <div class="pull-left padding-vertical-10">
                       <i class="icon fa-money font-size-24 vertical-align-bottom margin-right-5"></i>Interest Earned
                     </div>
-                    <span class="pull-right padding-top-10" data-edexcoin="COIN" style="font-size: 22px;"><span data-edexcoin="COIN" id="edex_interest_balance"></span> <span data-edexcoin="COIN" id="edex_total_interest_coincode"></span></span>
+                    <span class="pull-right padding-top-10" data-edexcoin="COIN" style="font-size: 22px"><span data-edexcoin="COIN" id="edex_interest_balance"></span> <span data-edexcoin="COIN" id="edex_total_interest_coincode"></span></span>
                   </div>
                 </div>
               </div>
@@ -812,7 +803,7 @@
             <!-- End EasyDEX Interest Balance Widget -->
           </div>
 
-          <div class="col-lg-4 col-xs-12" data-edexcoin="COIN" id="edexcoin_getbalance_total_interest" style="display: none;">
+          <div class="col-lg-4 col-xs-12" data-edexcoin="COIN" id="edexcoin_getbalance_total_interest" style="display: none">
             <!-- EasyDEX Total Balance Widget-->
             <div class="widget widget-shadow" id="widgetLineareaOne">
               <div class="widget-content">
@@ -821,7 +812,7 @@
                     <div class="pull-left padding-vertical-10">
                       <i class="icon fa-bullseye font-size-24 vertical-align-bottom margin-right-5"></i>Total Balance
                     </div>
-                    <span class="pull-right padding-top-10" data-edexcoin="COIN" style="font-size: 22px;"><span data-edexcoin="COIN" id="edex_total_balance_interest"></span> <span data-edexcoin="COIN" id="edex_total_balance_interest_coincode"></span></span>
+                    <span class="pull-right padding-top-10" data-edexcoin="COIN" style="font-size: 22px"><span data-edexcoin="COIN" id="edex_total_balance_interest"></span> <span data-edexcoin="COIN" id="edex_total_balance_interest_coincode"></span></span>
                   </div>
                 </div>
               </div>
@@ -832,7 +823,7 @@
         </div>
       </div>
 
-      <div data-edexcoin="COIN" id="edexcoin_dashboard_basilisk_refresh_status" style="display: none;">
+      <div data-edexcoin="COIN" id="edexcoin_dashboard_basilisk_refresh_status" style="display: none">
         <div class="col-xs-12 margin-top-20">
           <div class="col-xs-12">
           <!-- Panel Tasks -->
@@ -864,7 +855,7 @@
         </div>
       </div>
 
-      <div data-edexcoin="COIN" id="edexcoin_dashboardinfo" style="display: none;">
+      <div data-edexcoin="COIN" id="edexcoin_dashboardinfo" style="display: none">
       <div class="col-xs-12 margin-top-20">
           <!-- Iguana Wallet Settings Box Tab -->
           <div class="panel nav-tabs-horizontal">
@@ -879,7 +870,7 @@
                       <a href="javascript:void(0)" class="dropdown-toggle white btn-xs btn-info btn_refresh_edexcoin_dashboard" data-edexcoin="COIN" aria-expanded="false" role="button"><i class="icon fa-refresh margin-right-10" aria-hidden="true"></i> Refresh</a>
                       <div class="dropdown">
                         <a class="dropdown-toggle btn-xs btn-default" data-edexcoin="COIN" id="btn_edexcoin_basilisk" data-toggle="dropdown" href="javascript:void(0)"
-                        aria-expanded="false" role="button" style="display: none;"><i class="icon fa-magic margin-right-10" aria-hidden="true"></i> Basilisk Actions <span class="caret"></span></a>
+                        aria-expanded="false" role="button" style="display: none"><i class="icon fa-magic margin-right-10" aria-hidden="true"></i> Basilisk Actions <span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="btn_edexcoin_basilisk"
                         role="menu">
 
@@ -941,13 +932,13 @@
         </div>
         </div>
 
-      <div class="col-sm-12 padding-top-10" data-edexcoin="COIN" id="edexcoin_send" style="display: none;">
+      <div class="col-sm-12 padding-top-10" data-edexcoin="COIN" id="edexcoin_send" style="display: none">
           <div class="col-xlg-12 col-md-12 col-sm-12 col-xs-12">
 
 
           <!-- EasyDEX Panel send -->
           <!-- Sending EDEXCoin Steps Default -->
-          <div class="steps row" style="margin-top: 10px;">
+          <div class="steps row" style="margin-top: 10px">
             <div class="step col-md-4 current" id="edexcoin_send_step_1">
               <span class="step-number">1</span>
               <div class="step-desc">
@@ -981,7 +972,7 @@
               </div>-->
             </div>
             <div class="panel-body container-fluid">
-              <form class="edexcoin-send-form" data-edexcoin="COIN" method="post" role="form" autocomplete="off" onsubmit="return false;">
+              <form class="edexcoin-send-form" data-edexcoin="COIN" method="post" role="form" autocomplete="off" onsubmit="return false">
                 <div class="row">
                   <div class="col-xlg-12 form-group form-material edexcoin_send_from_for_basilisk">
                     <label class="control-label" data-edexcoin="COIN" for="edexcoin_send_from">Send From</label>
@@ -1017,7 +1008,7 @@
 
           <!-- EasyDEX Panel confirm send panel -->
           <div class="col-xlg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="panel" id="edexcoin-send-confirm-screen" style="display: none;">
+            <div class="panel" id="edexcoin-send-confirm-screen" style="display: none">
               <div class="panel-body">
                 <div class="row">
                   <div class="col-xs-12"><b>To:</b></div>
@@ -1033,8 +1024,8 @@
                 <div class="row">
                   <div class="col-xs-12"><b>From:</b></div>
                   <div class="col-lg-6 col-sm-6 col-xs-12" id="mdl_confirm_currency_sendfrom_addr">[coin-address-goes-here]</div>
-                  <div class="col-lg-6 col-sm-6 col-xs-6" style="color: #f44336;"><span id="mdl_confirm_currency_sendfrom_total_dedcut">-0.00000000</span> <span id="mdl_confirm_currency_coinname_total">[COIN]</span></div>
-                  <!--<div class="col-lg-2 col-sm-2 col-xs-6" id="mdl_confirm_currency_sendfrom_total_deduct_fiat" style="color: #f44336;">-$0.00</div>-->
+                  <div class="col-lg-6 col-sm-6 col-xs-6" style="color: #f44336"><span id="mdl_confirm_currency_sendfrom_total_dedcut">-0.00000000</span> <span id="mdl_confirm_currency_coinname_total">[COIN]</span></div>
+                  <!--<div class="col-lg-2 col-sm-2 col-xs-6" id="mdl_confirm_currency_sendfrom_total_deduct_fiat" style="color: #f44336">-$0.00</div>-->
                 </div>
                 <div class="widget-body-footer">
                     <a class="btn btn-default waves-effect waves-light" id="edexcoin_send_coins_back_btn">Back</a>
@@ -1050,7 +1041,7 @@
 
           <!-- EasyDEX Panel send info panel -->
           <div class="col-xlg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="panel" id="edexcoin-send-txdetails-screen" style="display: none;">
+            <div class="panel" id="edexcoin-send-txdetails-screen" style="display: none">
               <div class="panel-heading">
                 <h4 class="panel-title">Transaction Result</h4>
                 <table class="table table-hover table-striped edexcoin_sendto_result" data-edexcoin="COIN" id="edexcoin_sendto_result">
@@ -1075,7 +1066,7 @@
 
 
 
-      <div data-edexcoin="COIN" id="edexcoin_recieve" style="display: none;">
+      <div data-edexcoin="COIN" id="edexcoin_recieve" style="display: none">
       <div class="col-xs-12 margin-top-20">
           <!-- Komodo Wallet receive tab -->
           <div class="panel nav-tabs-horizontal">
@@ -1143,7 +1134,7 @@
               <button type="button" class="close white" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">×</span>
               </button>
-              <h4 class="modal-title white"><span class="icon wb-upload" style="margin: 0;"></span> Confirm <small class="white" style="font-size: 10px;">STEP 2 of 2</small></h4>
+              <h4 class="modal-title white"><span class="icon wb-upload" style="margin: 0"></span> Confirm <small class="white" style="font-size: 10px">STEP 2 of 2</small></h4>
               <span class="white">Please review your transaction</span>
             </div>
             <div class="modal-body">
@@ -1161,8 +1152,8 @@
               <div class="row">
                 <div class="col-xs-12"><b>From:</b></div>
                 <div class="col-lg-6 col-sm-6 col-xs-12" id="mdl_confirm_currency_sendfrom_addr">[coin-address-goes-here]</div>
-                <div class="col-lg-6 col-sm-6 col-xs-6" style="color: #f44336;"><span id="mdl_confirm_currency_sendfrom_total_dedcut">-0.00000000</span> <span id="mdl_confirm_currency_coinname_total">[COIN]</span></div>
-                <div class="col-lg-2 col-sm-2 col-xs-6" id="mdl_confirm_currency_sendfrom_total_deduct_fiat" style="color: #f44336;">-$0.00</div>
+                <div class="col-lg-6 col-sm-6 col-xs-6" style="color: #f44336"><span id="mdl_confirm_currency_sendfrom_total_dedcut">-0.00000000</span> <span id="mdl_confirm_currency_coinname_total">[COIN]</span></div>
+                <div class="col-lg-2 col-sm-2 col-xs-6" id="mdl_confirm_currency_sendfrom_total_deduct_fiat" style="color: #f44336">-$0.00</div>
               </div>
             </div>
             <div class="modal-footer">
@@ -1182,15 +1173,15 @@
               <button type="button" class="close white" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">×</span>
               </button>
-              <h4 class="modal-title white"><span class="icon wb-download" style="margin: 0;"></span> Receive <span id="mdl_receive_coin_name"></span></h4>
+              <h4 class="modal-title white"><span class="icon wb-download" style="margin: 0"></span> Receive <span id="mdl_receive_coin_name"></span></h4>
               <span class="white">This is your default Iguana wallet address.</span>
             </div>
             <div class="modal-body">
               <div class="row">
-                <div class="col-xs-8" style="text-align: center;"><h4>Copy and Share</h4></div><div class="col-xs-4" style="text-align: center;"><h4>Scan</h4></div>
-                <span class="col-sm-8 col-xs-12" style="text-align: center;"><input type="text" class="force-select form-control empty" id="mdl_receive_coin_addr" readonly/><br>
+                <div class="col-xs-8" style="text-align: center"><h4>Copy and Share</h4></div><div class="col-xs-4" style="text-align: center"><h4>Scan</h4></div>
+                <span class="col-sm-8 col-xs-12" style="text-align: center"><input type="text" class="force-select form-control empty" id="mdl_receive_coin_addr" readonly/><br>
                 <button class="btn btn-round btn-info btn-default waves-effect waves-round waves-light" data-clipboard-action="copy" data-clipboard-target="#mdl_receive_coin_addr" data-toggle="tooltip"><i class="icon md-copy" aria-hidden="true"></i>Copy to clipboard</button></span>
-                <span class="col-sm-4 col-xs-12" id="mdl_receive_coin_addr_qr_code" style="width: 60px;"></span>
+                <span class="col-sm-4 col-xs-12" id="mdl_receive_coin_addr_qr_code" style="width: 60px"></span>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal" id="mdl_receive_coin_done_btn" onclick="ReceiveCoinMdlBtnClean()">Done</button>
@@ -1223,7 +1214,7 @@
 
     <!-- BEGIN KOMODO WALLET CONTENT BODY -->
     <div class="page-content" data-extcoin="COIN" id="section-extcoin">
-      <div role="alert" class="alert alert-danger alert-dismissible" data-extcoin="COIN" id="extcoin-wallet-connection-alert" style="display: none;">
+      <div role="alert" class="alert alert-danger alert-dismissible" data-extcoin="COIN" id="extcoin-wallet-connection-alert" style="display: none">
         <button aria-label="Close" data-dismiss="alert" class="close" type="button"><span aria-hidden="true">×</span></button>
         <h4>Opps! Something is not right...</h4>
         <p data-extcoin="COIN" id="extcoin-wallet-connection-alert-text">Could not connect to external wallet. Reasons can be:<br> - Your External Wallet/daemon isn't running<br>
@@ -1232,21 +1223,21 @@
         <!--<p class="margin-top-15"><button class="btn btn-success btn-inverse" type="button" id="extcoin-wallet-connection-alert-btn">Refresh Again</button></p>-->
       </div>
 
-      <div role="alert" class="alert alert-info alert-dismissible" data-extcoin="COIN" id="extcoin-wallet-activating-alert" style="display: none;">
+      <div role="alert" class="alert alert-info alert-dismissible" data-extcoin="COIN" id="extcoin-wallet-activating-alert" style="display: none">
         <button aria-label="Close" data-dismiss="alert" class="close" type="button"><span aria-hidden="true">×</span></button>
         <h4>Activating best chain<span id="activating-komodod-tridot">...</span><span id="activating-komodod-progress"></span></h4>
         <p data-extcoin="COIN" id="extcoin-wallet-connection-alert-text">Komodo daemon has been started and is processing.<br>Please wait while the best chain is being activated.</p>
       </div>
 
-      <div class="row" data-extcoin="COIN" style="margin: -20px 0px 10px 0px;">
+      <div class="row" data-extcoin="COIN" style="margin: -20px 0px 10px 0px">
         <div class="col-xs-12" data-extcoin="COIN" id="extcoin-progressbars" >
           <div class="progress">
-            <div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 0%; font-size: 80%;" role="progressbar" data-extcoin="COIN" id="extcoin-sync"><span data-extcoin="COIN" id="extcoin-sync-percent">-</span> | <span data-extcoin="COIN" id="extcoin-synced-blocks">-</span> / <span data-extcoin="COIN" id="extcoin-longestchain">-</span> | Connections: <span data-extcoin="COIN" id="extcoin-connections">-</span></div>
+            <div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 0%; font-size: 80%" role="progressbar" data-extcoin="COIN" id="extcoin-sync"><span data-extcoin="COIN" id="extcoin-sync-percent">-</span> | <span data-extcoin="COIN" id="extcoin-synced-blocks">-</span> / <span data-extcoin="COIN" id="extcoin-longestchain">-</span> | Connections: <span data-extcoin="COIN" id="extcoin-connections">-</span></div>
           </div>
         </div>
       </div>
 
-      <div class="row" data-extcoin="COIN" id="extcoin-wallet" data-plugin="masonry" style="display: none;">
+      <div class="row" data-extcoin="COIN" id="extcoin-wallet" data-plugin="masonry" style="display: none">
       <div class="col-xs-12">
         <div class="col-lg-3 col-xs-12" data-extcoin="COIN" id="kmd_widget_get_total_balance_t">
           <!-- KMD Transparent Balance Widget-->
@@ -1257,7 +1248,7 @@
                   <div class="pull-left padding-vertical-10">
                     <i class="icon fa-eye font-size-24 vertical-align-bottom margin-right-5"></i>Transparent Balance
                   </div>
-                  <span class="pull-right padding-top-10" data-extcoin="COIN" id="kmd_transparent_balance" style="font-size: 22px;">-</span>
+                  <span class="pull-right padding-top-10" data-extcoin="COIN" id="kmd_transparent_balance" style="font-size: 22px">-</span>
                 </div>
               </div>
             </div>
@@ -1273,7 +1264,7 @@
                   <div class="pull-left padding-vertical-10">
                     <i class="icon fa-eye-slash font-size-24 vertical-align-bottom margin-right-5"></i>Private (Z) Balance
                   </div>
-                  <span class="pull-right padding-top-10" data-extcoin="COIN" id="kmd_private_balance" style="font-size: 22px;">-</span>
+                  <span class="pull-right padding-top-10" data-extcoin="COIN" id="kmd_private_balance" style="font-size: 22px">-</span>
                 </div>
               </div>
             </div>
@@ -1289,7 +1280,7 @@
                   <div class="pull-left padding-vertical-10">
                     <i class="icon fa-money font-size-24 vertical-align-bottom margin-right-5"></i>Interest Earned
                   </div>
-                  <span class="pull-right padding-top-10" data-extcoin="COIN" id="kmd_total_interest_balance" style="font-size: 22px;">-</span>
+                  <span class="pull-right padding-top-10" data-extcoin="COIN" id="kmd_total_interest_balance" style="font-size: 22px">-</span>
                 </div>
               </div>
             </div>
@@ -1305,7 +1296,7 @@
                   <div class="pull-left padding-vertical-10">
                     <i class="icon fa-bullseye font-size-24 vertical-align-bottom margin-right-5"></i>Total (Z+T) Balance
                   </div>
-                  <span class="pull-right padding-top-10" data-extcoin="COIN" id="kmd_total_tz_balance" style="font-size: 22px;">-</span>
+                  <span class="pull-right padding-top-10" data-extcoin="COIN" id="kmd_total_tz_balance" style="font-size: 22px">-</span>
                 </div>
               </div>
             </div>
@@ -1429,7 +1420,7 @@
         </div>
 
 
-        <div data-extcoin="COIN" id="kmd_wallet_send" style="display: none;">
+        <div data-extcoin="COIN" id="kmd_wallet_send" style="display: none">
           <div class="col-xlg-12 col-md-12 col-sm-12 col-xs-12">
           <!-- Panel getinfo -->
           <div class="panel" id="projects">
@@ -1441,7 +1432,7 @@
               </div>-->
             </div>
             <div class="panel-body container-fluid">
-              <form class="extcoin-send-form" data-extcoin="COIN" method="post" role="form" autocomplete="off" onsubmit="return false;">
+              <form class="extcoin-send-form" data-extcoin="COIN" method="post" role="form" autocomplete="off" onsubmit="return false">
                 <div class="row">
                   <div class="col-xlg-12 form-group form-material">
                     <label class="control-label" data-extcoin="COIN" for="kmd_wallet_send_from">Send From</label>
@@ -1530,7 +1521,7 @@
         </div>
         </div>
 
-        <div data-extcoin="COIN" id="kmd_wallet_settings" style="display: none;">
+        <div data-extcoin="COIN" id="kmd_wallet_settings" style="display: none">
           <div class="col-xlg-6 col-md-4">
           <!-- Panel Wallet Info -->
           <div class="panel" id="projects">
@@ -1594,7 +1585,7 @@
               <button type="button" class="close white" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">×</span>
               </button>
-              <h4 class="modal-title white"><span class="icon fa-search" style="margin: 0;"></span> Transaction ID <span id="mdl_txid_info_coin_name"></span></h4>
+              <h4 class="modal-title white"><span class="icon fa-search" style="margin: 0"></span> Transaction ID <span id="mdl_txid_info_coin_name"></span></h4>
             </div>-->
             <div class="modal-body">
               <!-- Iguana Wallet Settings Box Tab -->
@@ -1656,7 +1647,7 @@
     <!-- END ZCASH WALLET CONTENT BODY -->
 
     <!-- BEGIN ATOMIC EXPLORER SETTINGS CONTENT BODY -->
-    <div class="page animsition" data-animsition-in="fade-in" data-animsition-out="fade-out" style="margin-left: 0px;">
+    <div class="page animsition" data-animsition-in="fade-in" data-animsition-out="fade-out" style="margin-left: 0px">
     <div class="page-content" id="section-iguana-atomic-explorer">
       <div class="row" id="atomic-explorer" data-plugin="masonry">
       <div class="col-xlg-12 col-md-12">
@@ -1692,7 +1683,7 @@
                   </select>
                 </div>
                 </div>
-                <div class="col-sm-4 col-xs-12" style="text-align: center;">
+                <div class="col-sm-4 col-xs-12" style="text-align: center">
                     <select class="form-control form-material" id="atomic_explorer_select_command_options">
                     <option value="">-Select Command-</option>
                     <option value="history">Address History</option>
@@ -1724,10 +1715,10 @@
                     <option value="basilisk_refresh">Basilisk Refresh</option>
                   </select>
                 </div>
-                <div class="col-sm-4 col-xs-12" style="text-align: center;">
+                <div class="col-sm-4 col-xs-12" style="text-align: center">
                     <input type="text" class="form-control" id="atomic_explorer_input_data" name="atomic_explorer_input_data" placeholder="addr, txid, blockash etc.">
                 </div>
-                <div class="col-sm-12 col-xs-12" style="text-align: center;">
+                <div class="col-sm-12 col-xs-12" style="text-align: center">
                     <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-dismiss="modal" id="atomic_explorer_getcoinpeers_btn">Submit</button>
                 </div>
             </div>
@@ -1754,7 +1745,7 @@
     <!-- END ATOMIC EXPLORER SETTINGS CONTENT BODY -->
 
     <!-- BEGIN IGUANA WALLET SETTINGS CONTENT BODY -->
-    <div class="page animsition" data-animsition-in="fade-in" data-animsition-out="fade-out" style="margin-left: 0px;">
+    <div class="page animsition" data-animsition-in="fade-in" data-animsition-out="fade-out" style="margin-left: 0px">
     <div class="page-content" id="section-iguana-wallet-settings">
       <div class="row" id="iguana-wallet-settings" data-plugin="masonry">
       <div class="col-xlg-12 col-md-12">
@@ -1781,13 +1772,13 @@
                             <tr><th width="10%">Key</th><th>Value</th></tr>
                           </thead>
                           <tbody>
-                            <tr><td style="font-weight: bold;">pubkey</td><td><div id="winfo_pubkey_value"></div></td></tr>
-                            <tr><td style="font-weight: bold;">btcpubkey</td><td><div id="winfo_btcpubkey_value"></div></td></tr>
-                            <tr><td style="font-weight: bold;">rmd160</td><td><div id="winfo_rmd160_value"></div></td></tr>
-                            <tr><td style="font-weight: bold;">NXT</td><td><div id="winfo_NXT_value"></div></td></tr>
-                            <tr><td style="font-weight: bold;">notary</td><td><div id="winfo_notary_value"></div></td></tr>
-                            <tr><td style="font-weight: bold;">status</td><td><div id="winfo_status_value"></div></td></tr>
-                            <!--<tr><td style="font-weight: bold;">duration</td><td><div id="winfo_duration_value"></div></td></tr>-->
+                            <tr><td style="font-weight: bold">pubkey</td><td><div id="winfo_pubkey_value"></div></td></tr>
+                            <tr><td style="font-weight: bold">btcpubkey</td><td><div id="winfo_btcpubkey_value"></div></td></tr>
+                            <tr><td style="font-weight: bold">rmd160</td><td><div id="winfo_rmd160_value"></div></td></tr>
+                            <tr><td style="font-weight: bold">NXT</td><td><div id="winfo_NXT_value"></div></td></tr>
+                            <tr><td style="font-weight: bold">notary</td><td><div id="winfo_notary_value"></div></td></tr>
+                            <tr><td style="font-weight: bold">status</td><td><div id="winfo_status_value"></div></td></tr>
+                            <!--<tr><td style="font-weight: bold">duration</td><td><div id="winfo_duration_value"></div></td></tr>-->
                           </tbody>
                         </table>
                       </div>
@@ -1834,7 +1825,7 @@
                               </select>
                             </div>
                             </div>
-                            <div class="col-sm-4 col-xs-12" style="text-align: center;">
+                            <div class="col-sm-4 col-xs-12" style="text-align: center">
                                 <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-dismiss="modal" id="settings_getcoinpeers_btn" onclick="Settings_ShowCoinPeers()">Check Nodes</button>
                             </div>
                             <div class="col-sm-12">
@@ -1875,7 +1866,7 @@
                               <input type="text" class="form-control" id="settings_add_peer_ip" name="settings_add_peer_ip" placeholder="Add Peer IP">
                             </div>
                             </div>
-                            <div class="col-sm-4 col-xs-12" style="text-align: center;">
+                            <div class="col-sm-4 col-xs-12" style="text-align: center">
                                 <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-dismiss="modal" id="settings_addcoinpeers_btn" onclick="Settings_AddCoinPeers()">Add Node</button>
                             </div>
                           </div>
@@ -1932,17 +1923,17 @@
                       <div class="panel-body">
                         <p>Only the active coin wallet wif keys will be shown here.<br>If you don't see a wif key for the coin you are looking for please active it by adding it from EasyDEX Dashboard.<br>You can use these wif keys to import to another coin wallets. <b><i>Please keep these keys extra safe and secure.</i></b></p>
                         <div class="col-sm-12"></div>
-                        <form class="wifkeys-form" method="post" action="javascript:;" autocomplete="off" onsubmit="return false;">
+                        <form class="wifkeys-form" method="post" action="javascript:" autocomplete="off" onsubmit="return false">
                           <div class="form-group form-material floating">
                             <input type="password" class="form-control" name="wifkeys_passphrase" id="wifkeys_passphrase">
                             <label class="floating-label" for="wifkeys_passphrase">Passphrase</label>
                           </div>
-                          <div class="col-sm-12 col-xs-12" style="text-align: center;">
+                          <div class="col-sm-12 col-xs-12" style="text-align: center">
                             <button type="submit" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-dismiss="modal" id="wifkeys_passphrase_btn">Get Wif Keys</button>
                           </div>
                         </form>
 
-                        <div class="col-sm-12" style="padding-top: 15px;">
+                        <div class="col-sm-12" style="padding-top: 15px">
                           <div class="row" id="wif-priv-keys" data-plugin="masonry">
 
                           </div>
@@ -1965,17 +1956,17 @@
                       <div class="panel-body">
                         <p>This section allows you to import private key of all iguana supported coins, Assetchain, Geckochain, or PAXchain by the wallet.<br>It is not mandatory to have that coin active in the wallet for which you are executing import private key process.<br>You'll also notice the private key you imported for one coin or chain will also be showing a new address in all other coin wallets' receiving address section. It is normal. <b><i>Please keep these keys extra safe and secure.</i></b></p>
                         <div class="col-sm-12"></div>
-                        <form class="wifkeys-import-form" method="post" action="javascript:;" autocomplete="off" onsubmit="return false;">
+                        <form class="wifkeys-import-form" method="post" action="javascript:" autocomplete="off" onsubmit="return false">
                           <div class="form-group form-material floating">
                             <input type="text" class="form-control" name="import_wifkey" id="import_wifkey">
                             <label class="floating-label" for="import_wifkey">Input Private Key</label>
                           </div>
-                          <div class="col-sm-12 col-xs-12" style="text-align: center;">
+                          <div class="col-sm-12 col-xs-12" style="text-align: center">
                             <button type="submit" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-dismiss="modal" id="import_wifkey_btn">Import Private Key</button>
                           </div>
                         </form>
 
-                        <div class="col-sm-12" style="padding-top: 15px;">
+                        <div class="col-sm-12" style="padding-top: 15px">
                           <div class="row" id="wif-priv-keys" data-plugin="masonry">
 
                           </div>
@@ -1998,7 +1989,7 @@
                       <div class="panel-body">
                         <p>This section allows you to read last N lines from debug log file.</i></b></p>
                         <div class="col-sm-12"></div>
-                        <form class="read-debug-log-import-form" method="post" action="javascript:;" autocomplete="off" onsubmit="return false;">
+                        <form class="read-debug-log-import-form" method="post" action="javascript:" autocomplete="off" onsubmit="return false">
                           <div class="form-group form-material floating">
                             <input type="text" class="form-control" name="read_debug_log_lines" id="read_debug_log_lines" value="10">
                             <label class="floating-label" for="read_debug_log_lines">Input number of lines to read</label>
@@ -2010,16 +2001,16 @@
                             </select>
                             <label class="floating-label" for="settings_select_debuglog_options">Target</label>
                           </div>
-                          <div class="col-sm-12 col-xs-12" style="text-align: center;">
+                          <div class="col-sm-12 col-xs-12" style="text-align: center">
                             <button type="submit" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-dismiss="modal" id="read_debug_log_btn" onclick="Settings_LoadDebugLog()">Load debug log</button>
                           </div>
-                          <div class="col-sm-12 col-xs-12" style="text-align: center;">
+                          <div class="col-sm-12 col-xs-12" style="text-align: center">
                             <br/>
                             <textarea id="read_debug_log_textarea" style="width:100%;height:200px"></textarea>
                           </div>
                         </form>
 
-                        <div class="col-sm-12" style="padding-top: 15px;">
+                        <div class="col-sm-12" style="padding-top: 15px">
                           <div class="row" id="wif-priv-keys" data-plugin="masonry">
 
                           </div>
@@ -2038,7 +2029,7 @@
     <!-- END IGUANA WALLET SETTINGS CONTENT BODY -->
 
     <!-- BEGIN ABOUT SUPERNET IGUANA CONTENT BODY -->
-    <div class="page animsition" data-animsition-in="fade-in" data-animsition-out="fade-out" style="margin-left: 0px;">
+    <div class="page animsition" data-animsition-in="fade-in" data-animsition-out="fade-out" style="margin-left: 0px">
     <div class="page-content" id="section-about-iguana">
       <h2>About Iguana</h2>
       <p>Page content goes here</p>
@@ -2046,113 +2037,138 @@
     </div>
     <!-- END ABOUT SUPERNET IGUANA CONTENT BODY -->
 
-
   <!-- Footer -->
   <!--<footer class="site-footer">
-    <div class="site-footer-legal">© 2016 <a href="javascript:;">SuperNET</a></div>
+    <div class="site-footer-legal">© 2016 <a href="javascript:">SuperNET</a></div>
     <div class="site-footer-right">
-      Crafted with <i class="red-600 icon md-favorite"></i> by <a href="javascript:;">Iguana</a>
+      Crafted with <i class="red-600 icon md-favorite"></i> by <a href="javascript:">Iguana</a>
     </div>
   </footer>-->
   </div>
   <!-- END Wallet Core Pages -->
-  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
-  <script src="assets/global/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/global/vendor/bootstrap/bootstrap.min.js"></script>
-  <script src="assets/global/vendor/animsition/animsition.min.js"></script>
-  <script src="assets/global/vendor/asscroll/jquery-asScroll.min.js"></script>
-  <script src="assets/global/vendor/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-  <script src="assets/global/vendor/mousewheel/jquery.mousewheel.min.js"></script>
-  <script src="assets/global/vendor/asscrollable/jquery.asScrollable.all.min.js"></script>
-  <script src="assets/global/vendor/ashoverscroll/jquery-asHoverScroll.min.js"></script>
-  <script src="assets/global/vendor/waves/waves.min.js"></script>
-  <!-- Plugins -->
-  <script src="assets/global/vendor/switchery/switchery.min.js"></script>
-  <script src="assets/global/vendor/intro-js/intro.min.js"></script>
-  <script src="assets/global/vendor/screenfull/screenfull.min.js"></script>
-  <script src="assets/global/vendor/slidepanel/jquery-slidePanel.min.js"></script>
-  <script src="assets/global/vendor/bootbox/bootbox.js"></script>
-  <script src="assets/global/vendor/jquery-validation/jquery.validate.min.js"></script>
-  <script src="assets/global/vendor/jquery-validation/additional-methods.min.js"></script>
-  <script src="assets/global/vendor/bootstrap-toastr/toastr.min.js"></script>
-  <script src="assets/global/vendor/bootstrap-select/bootstrap-select.min.js"></script>
-  <script src="assets/global/vendor/sweetalert2/sweetalert2.min.js" type="text/javascript"></script>
-  <script src="assets/global/vendor/jquery-qrcode/jquery.qrcode.min.js" type="text/javascript"></script>
-  <script src="assets/global/vendor/clipboard/clipboard.min.js"></script>
-  <script src="assets/global/vendor/asprogress/jquery-asProgress.min.js"></script>
-  <script src="assets/global/vendor/jquery-labelauty/jquery-labelauty.js"></script>
-  <script src="assets/global/vendor/alertify-js/alertify.js"></script>
-  <script src="assets/global/vendor/nprogress/nprogress.js"></script>
-  <script src="assets/global/vendor/ladda-bootstrap/spin.min.js"></script>
-  <script src="assets/global/vendor/ladda-bootstrap/ladda.min.js"></script>
-  <script src="assets/global/vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="assets/global/vendor/datatables-fixedheader/dataTables.fixedHeader.js"></script>
-  <script src="assets/global/vendor/datatables-bootstrap/dataTables.bootstrap.min.js"></script>
-  <script src="assets/global/vendor/datatables-responsive/dataTables.responsive.js"></script>
-  <script src="assets/global/vendor/datatables-tabletools/dataTables.tableTools.js"></script>
-  <script src="assets/global/vendor/underscore-js/underscore-min.js"></script>
-  <script src="assets/global/vendor/javascript-md5/md5.min.js"></script>
-  <script src="assets/global/vendor/bluebird/bluebird.min.js"></script>
-  <script src="assets/global/vendor/socket.io.js"></script>
-  <!-- Crypto Dependencies -->
-  <script src="assets/scripts/wordlist.js" type="text/javascript"></script>
-  <script src="assets/scripts/passphrasegenerator.js" type="text/javascript"></script>
-  <script src="assets/scripts/seedrandom.js" type="text/javascript"></script>
-  <!-- Scripts -->
-  <script src="assets/global/js/core.js"></script>
-  <script src="assets/js/site.js"></script>
-  <script src="assets/js/sections/menu.js"></script>
-  <script src="assets/js/sections/menubar.js"></script>
-  <script src="assets/js/sections/sidebar.js"></script>
-  <script src="assets/global/js/configs/config-colors.js"></script>
-  <script src="assets/js/configs/config-tour.js"></script>
-  <script src="assets/global/js/components/asscrollable.js"></script>
-  <script src="assets/global/js/components/nprogress.min.js"></script>
-  <script src="assets/global/js/components/animsition.js"></script>
-  <script src="assets/global/js/components/slidepanel.js"></script>
-  <script src="assets/global/js/components/bootbox.js"></script>
-  <script src="assets/global/js/components/switchery.js"></script>
-  <script src="assets/global/js/components/tabs.js"></script>
-  <script src="assets/global/js/components/buttons.js"></script>
-  <script src="assets/global/js/components/ladda-bootstrap.js"></script>
-  <script src="assets/global/js/components/asprogress.min.js"></script>
-  <script src="assets/global/js/components/jquery-labelauty.min.js"></script>
-  <script src="assets/global/js/components/alertify-js.js"></script>
-  <script src="assets/global/js/components/panel.min.js"></script>
-  <script src="assets/scripts/checkie.js"></script>
-  <script src="assets/scripts/iguana_api.js"></script>
-  <script src="assets/scripts/login.js"></script>
-  <script src="assets/scripts/dashboard.js"></script>
-  <!--<script src="assets/scripts/coinwallets.js"></script>-->
-  <script src="assets/scripts/sidebar.js"></script>
-  <script src="assets/scripts/walletsettings.js"></script>
-  <script src="assets/scripts/atomicexplorer.js"></script>
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="assets/global/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/global/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/global/vendor/animsition/animsition.min.js"></script>
+    <script src="assets/global/vendor/asscroll/jquery-asScroll.min.js"></script>
+    <script src="assets/global/vendor/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="assets/global/vendor/mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="assets/global/vendor/asscrollable/jquery.asScrollable.all.min.js"></script>
+    <script src="assets/global/vendor/ashoverscroll/jquery-asHoverScroll.min.js"></script>
+    <script src="assets/global/vendor/waves/waves.min.js"></script>
+    <!-- Plugins -->
+    <script src="assets/global/vendor/switchery/switchery.min.js"></script>
+    <script src="assets/global/vendor/intro-js/intro.min.js"></script>
+    <script src="assets/global/vendor/screenfull/screenfull.min.js"></script>
+    <script src="assets/global/vendor/slidepanel/jquery-slidePanel.min.js"></script>
+    <script src="assets/global/vendor/bootbox/bootbox.js"></script>
+    <script src="assets/global/vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="assets/global/vendor/jquery-validation/additional-methods.min.js"></script>
+    <script src="assets/global/vendor/bootstrap-toastr/toastr.min.js"></script>
+    <script src="assets/global/vendor/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="assets/global/vendor/sweetalert2/sweetalert2.min.js" type="text/javascript"></script>
+    <script src="assets/global/vendor/jquery-qrcode/jquery.qrcode.min.js" type="text/javascript"></script>
+    <script src="assets/global/vendor/clipboard/clipboard.min.js"></script>
+    <script src="assets/global/vendor/asprogress/jquery-asProgress.min.js"></script>
+    <script src="assets/global/vendor/jquery-labelauty/jquery-labelauty.js"></script>
+    <script src="assets/global/vendor/alertify-js/alertify.js"></script>
+    <script src="assets/global/vendor/nprogress/nprogress.js"></script>
+    <script src="assets/global/vendor/ladda-bootstrap/spin.min.js"></script>
+    <script src="assets/global/vendor/ladda-bootstrap/ladda.min.js"></script>
+    <script src="assets/global/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/global/vendor/datatables-fixedheader/dataTables.fixedHeader.js"></script>
+    <script src="assets/global/vendor/datatables-bootstrap/dataTables.bootstrap.min.js"></script>
+    <script src="assets/global/vendor/datatables-responsive/dataTables.responsive.js"></script>
+    <script src="assets/global/vendor/datatables-tabletools/dataTables.tableTools.js"></script>
+    <script src="assets/global/vendor/underscore-js/underscore-min.js"></script>
+    <script src="assets/global/vendor/javascript-md5/md5.min.js"></script>
+    <script src="assets/global/vendor/bluebird/bluebird.min.js"></script>
+    <script src="assets/global/vendor/socket.io.js"></script>
+    <!-- Crypto Dependencies -->
+    <script src="assets/scripts/wordlist.js" type="text/javascript"></script>
+    <script src="assets/scripts/passphrasegenerator.js" type="text/javascript"></script>
+    <script src="assets/scripts/seedrandom.js" type="text/javascript"></script>
+    <!-- Scripts -->
+    <script src="assets/global/js/core.js"></script>
+    <script src="assets/js/site.js"></script>
+    <script src="assets/js/sections/menu.js"></script>
+    <script src="assets/js/sections/menubar.js"></script>
+    <script src="assets/js/sections/sidebar.js"></script>
+    <script src="assets/global/js/configs/config-colors.js"></script>
+    <script src="assets/js/configs/config-tour.js"></script>
+    <script src="assets/global/js/components/asscrollable.js"></script>
+    <script src="assets/global/js/components/nprogress.min.js"></script>
+    <script src="assets/global/js/components/animsition.js"></script>
+    <script src="assets/global/js/components/slidepanel.js"></script>
+    <script src="assets/global/js/components/bootbox.js"></script>
+    <script src="assets/global/js/components/switchery.js"></script>
+    <script src="assets/global/js/components/tabs.js"></script>
+    <script src="assets/global/js/components/buttons.js"></script>
+    <script src="assets/global/js/components/ladda-bootstrap.js"></script>
+    <script src="assets/global/js/components/asprogress.min.js"></script>
+    <script src="assets/global/js/components/jquery-labelauty.min.js"></script>
+    <script src="assets/global/js/components/alertify-js.js"></script>
+    <script src="assets/global/js/components/panel.min.js"></script>
+    <script src="assets/scripts/checkie.js"></script>
+    
+    <!-- Iguana API Scripts -->
+    <script src="assets/scripts/iguana_api.js"></script>
+    <!--script src="assets/scripts/iguana_api/IguanaUnused.js"></script>
+    <script src="assets/scripts/iguana_api/IguanaHandle.js"></script>
+    <script src="assets/scripts/iguana_api/IguanaAddcoin.js"></script>
+    <script src="assets/scripts/iguana_api/IguanaEDEX.js"></script>
+    <script src="assets/scripts/iguana_api/IguanaDEX.js"></script>
+    <script src="assets/scripts/iguana_api/IguanaShepherd.js"></script-->
+    <!-- End Iguana API Scripts -->
+    
+    <script src="assets/scripts/login.js"></script>
+    
+    <!-- Dashboard Scripts -->  
+    <script src="assets/scripts/dashboard.js"></script>
+    <!--script src="assets/scripts/dashboard/DashboardEDEX.js"></script>
+    <script src="assets/scripts/dashboard/DashboardDEX.js"></script>    
+    <script src="assets/scripts/dashboard/DashboardBasilisk.js"></script>
+    <script src="assets/scripts/dashboard/DashboardCoinFiat.js"></script-->
+    <!-- End Dashboard Scripts -->  
+    
+    <!--<script src="assets/scripts/coinwallets.js"></script>-->
+    <script src="assets/scripts/sidebar.js"></script>
+    <script src="assets/scripts/walletsettings.js"></script>
+    <script src="assets/scripts/atomicexplorer.js"></script>
 
-  <!-- KMD Wallet Scripts -->
-  <script src="assets/scripts/kmd_wallet_dashboard.js"></script>
-  <!-- End KMD Wallet Scripts -->
+    <!-- Native KMD Wallet Scripts -->
+    <script src="assets/scripts/kmd_wallet/KMDWalletDashboard.js"></script>
+    <script src="assets/scripts/kmd_wallet/KMDInit.js"></script>
+    <script src="assets/scripts/kmd_wallet/KMDBalance.js"></script>
+    <script src="assets/scripts/kmd_wallet/KMDGetinfo.js"></script>
+    <script src="assets/scripts/kmd_wallet/KMDTransaction.js"></script>
+    <script src="assets/scripts/kmd_wallet/KMDTransactionInfo.js"></script>
+    <script src="assets/scripts/kmd_wallet/KMDAddress.js"></script>
+    <script src="assets/scripts/kmd_wallet/KMDSendTx.js"></script>
+    <script src="assets/scripts/kmd_wallet_dashboard.js"></script>
+    <!-- End Native KMD Wallet Scripts -->
 
-  <script>
-  (function(document, window, $) {
-    'use strict';
-    var Site = window.Site;
-    $(document).ready(function() {
-      Site.run();
-      var socket = io.connect('http://localhost:17777');
-      socket.on('connect', function(data) {
-        socket.emit('join', 'EDEX GUI joined');
+    <script type="text/javascript">
+      (function(document, window, $) {
+        'use strict';
+        var Site = window.Site;
+        $(document).ready(function() {
+          Site.run();
+          var socket = io.connect('http://localhost:17777');
+          socket.on('connect', function(data) {
+            socket.emit('join', 'EDEX GUI joined');
+          });
+          socket.on('messages', function(data) {
+            console.log(data);
+          });      
+        });
+      })(document, window, jQuery);
+
+      jQuery(document).ready(function(){
+        jQuery('.scrollbar-dynamic').scrollbar();
       });
-      socket.on('messages', function(data) {
-        console.log(data);
-      });      
-    });
-  })(document, window, jQuery);
-  </script>
-  <script type="text/javascript">
-  jQuery(document).ready(function(){
-    jQuery('.scrollbar-dynamic').scrollbar();
-  });
-  </script>
-  <script>if (window.module) module = window.module;</script>
-</body>
+      
+      if (window.module) module = window.module;
+    </script>
+  </body>
 </html>

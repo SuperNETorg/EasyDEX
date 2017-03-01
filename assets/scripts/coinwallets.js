@@ -9,6 +9,27 @@ $(document).ready(function() {
 
 // Functions =============================================================
 
+var fiat_symbol;
+function getCurrency() {
+	if (localStorage.getItem('EasyDEX_FiatCurrency') == 'USD' ||
+			localStorage.getItem('EasyDEX_FiatCurrency') == 'NZD' ||
+			localStorage.getItem('EasyDEX_FiatCurrency') == 'AUD' ) {
+		fiat_symbol = '$';
+	}
+	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'INR' ) {
+		fiat_symbol = '₹';
+	}
+	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'CNY' || localStorage.getItem('EasyDEX_FiatCurrency') == 'JPY' ) {
+		fiat_symbol = '¥';
+	}
+	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'GBP' ) {
+		fiat_symbol = '£';
+	}
+	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'EUR' ) {
+		fiat_symbol = '€';
+	}	
+}
+
 function sendCurrency(val) {
 	console.log(val);
 	$('#mdl_currency_coin').text(val.currency);
@@ -89,23 +110,7 @@ $('#mdl_currency_amount').keyup(function() {
 		currency_fiat_value = localStorage.getItem('EasyDEX_BTC_Fiat_pair_value');
 	}
 
-	if (localStorage.getItem('EasyDEX_FiatCurrency') == 'USD' ||
-			localStorage.getItem('EasyDEX_FiatCurrency') == 'NZD' ||
-			localStorage.getItem('EasyDEX_FiatCurrency') == 'AUD' ) {
-		fiat_symbol = '$';
-	}
-	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'INR' ) {
-		fiat_symbol = '₹';
-	}
-	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'CNY' || localStorage.getItem('EasyDEX_FiatCurrency') == 'JPY' ) {
-		fiat_symbol = '¥';
-	}
-	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'GBP' ) {
-		fiat_symbol = '£';
-	}
-	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'EUR' ) {
-		fiat_symbol = '€';
-	}
+	getCurrency();
 	var total_of_currency_fiat = total_of_currency_fee * currency_fiat_value;
 	//console.log($('#mdl_currency_amount').val());
 	//console.log(total_of_currency_fiat);
@@ -139,23 +144,7 @@ $('#mdl_currency_fee').keyup(function() {
 		currency_fiat_value = localStorage.getItem('EasyDEX_BTC_Fiat_pair_value');
 	}
 
-	if (localStorage.getItem('EasyDEX_FiatCurrency') == 'USD' ||
-			localStorage.getItem('EasyDEX_FiatCurrency') == 'NZD' ||
-			localStorage.getItem('EasyDEX_FiatCurrency') == 'AUD' ) {
-		fiat_symbol = '$';
-	}
-	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'INR' ) {
-		fiat_symbol = '₹';
-	}
-	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'CNY' || localStorage.getItem('EasyDEX_FiatCurrency') == 'JPY' ) {
-		fiat_symbol = '¥';
-	}
-	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'GBP' ) {
-		fiat_symbol = '£';
-	}
-	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'EUR' ) {
-		fiat_symbol = '€';
-	}
+	getCurrency();
 
 	var total_of_currency_fiat = total_of_currency_fee * currency_fiat_value;
 	$('#mdl_currency_total_value').text(total_of_currency_fee.toFixed(8));
@@ -189,23 +178,7 @@ function ConfirmsendCurrency(confirm_val) {
 		currency_fiat_value = localStorage.getItem('EasyDEX_BTC_Fiat_pair_value');
 	}
 
-	if (localStorage.getItem('EasyDEX_FiatCurrency') == 'USD' ||
-			localStorage.getItem('EasyDEX_FiatCurrency') == 'NZD' ||
-			localStorage.getItem('EasyDEX_FiatCurrency') == 'AUD' ) {
-		fiat_symbol = '$';
-	}
-	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'INR' ) {
-		fiat_symbol = '₹';
-	}
-	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'CNY' || localStorage.getItem('EasyDEX_FiatCurrency') == 'JPY' ) {
-		fiat_symbol = '¥';
-	}
-	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'GBP' ) {
-		fiat_symbol = '£';
-	}
-	if ( localStorage.getItem('EasyDEX_FiatCurrency') == 'EUR' ) {
-		fiat_symbol = '€';
-	}
+	getCurrency();
 
 	$('#mdl_confirm_currency_sendto_addr').text($('#mdl_currency_sendto').val());
 	$('#mdl_confirm_currency_send_amount').text($('#mdl_currency_amount').val());
