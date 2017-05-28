@@ -4,6 +4,7 @@ import {
   secondsElapsedToString,
   secondsToString
 } from '../../util/time';
+import { sortByDate } from '../../util/sort';
 import { translate } from '../../translate/translate';
 
 class Notifications extends React.Component {
@@ -16,6 +17,7 @@ class Notifications extends React.Component {
       totalSuccessCalls: 0,
       totalPendingCalls: 0,
       activeTab: 2,
+      guiLog: null,
     };
     this.toggleNotificationsModal = this.toggleNotificationsModal.bind(this);
   }
@@ -35,8 +37,11 @@ class Notifications extends React.Component {
       let totalErrorCalls = 0;
       let totalSuccessCalls = 0;
       let totalPendingCalls = 0;
+      let guiLogToArray = [];
 
       for (let timestamp in _guiLog) {
+        guiLogToArray.push(_guiLog[timestamp]);
+
         if (_guiLog[timestamp].status === 'error') {
           totalErrorCalls++;
         }
@@ -53,27 +58,29 @@ class Notifications extends React.Component {
         totalErrorCalls,
         totalSuccessCalls,
         totalPendingCalls,
+        guiLog: guiLogToArray,
       }));
     }
   }
 
   renderNotificationsByType(type) {
     // get total number of calls per type
-    if (this.props.Dashboard &&
-        this.props.Dashboard.guiLog) {
-      const _guiLog = this.props.Dashboard.guiLog;
+    if (this.state.guiLog &&
+        this.state.guiLog.length) {
+      let _guiLog = this.state.guiLog;
+      _guiLog = sortByDate(_guiLog);
       let items = [];
       let index = 0;
 
-      for (let timestamp in _guiLog) {
-        if (_guiLog[timestamp].status === type) {
-          const _logItem = _guiLog[timestamp];
+      for (let i = 0; i < _guiLog.length; i++) {
+        if (_guiLog[i].status === type) {
+          const _logItem = _guiLog[i];
 
           items.push(
-            <div key={ timestamp }>
-              <div>{ (index + 1) }.</div>
+            <div key={ _logItem.timestamp }>
+              <div>{ index + 1 }.</div>
               <div>
-                <strong>Time:</strong> { secondsToString(timestamp, true, true) }
+                <strong>Time:</strong> { secondsToString(_logItem.timestamp, true, true) }
               </div>
               <div>
                 <strong>GUI Function:</strong> { _logItem.function }
@@ -106,10 +113,10 @@ class Notifications extends React.Component {
     if (this.state.displayModal) {
       return (
         <div onKeyDown={ (event) => this.handleKeydown(event) }>
-          <div className="modal show" aria-hidden="false" role="dialog">
+          <div className="modal show notifications-modal" aria-hidden="false" role="dialog">
             <div className="modal-dialog modal-center modal-lg">
               <div className="modal-content">
-                <div className="modal-body" style={{ height: '590px' }}>
+                <div className="modal-body modal-body-container">
                   <div className="panel nav-tabs-horizontal">
                     <ul className="nav nav-tabs nav-tabs-line" role="tablist">
                       <li className={ this.state.activeTab === 0 ? 'active' : 'pointer' } role="presentation">
@@ -134,7 +141,7 @@ class Notifications extends React.Component {
                         </a>
                       </li>
                     </ul>
-                    <div className="panel-body" style={{ height: '500px', overflowY: 'scroll' }}>
+                    <div className="panel-body panel-body-container">
                       <div className="tab-content">
                         <div
                           className={ this.state.activeTab === 0 ? 'tab-pane active' : 'tab-pane' }

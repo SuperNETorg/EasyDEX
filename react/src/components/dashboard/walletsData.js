@@ -6,18 +6,18 @@ import { sortByDate } from '../../util/sort';
 import {
   basiliskRefresh,
   basiliskConnection,
-  getDexNotaries,
   toggleDashboardTxInfoModal,
   getBasiliskTransactionsList,
   changeMainBasiliskAddress,
   displayNotariesModal,
-  deleteCacheFile,
-  connectNotaries,
   toggleViewCacheModal,
-  fetchNewCacheData,
-  fetchUtxoCache,
+  changeActiveAddress,
   restartBasiliskInstance,
-  changeActiveAddress
+  connectNotaries,
+  getDexNotaries,
+  deleteCacheFile,
+  fetchNewCacheData,
+  fetchUtxoCache
 } from '../../actions/actionCreators';
 import Store from '../../store';
 
@@ -82,14 +82,9 @@ class WalletsData extends React.Component {
     }
   }
 
-  componentDidMount() {
-    console.log('use cache = ', this.state.useCache);
-  }
-
   toggleCacheApi() {
     const _useCache = !this.state.useCache;
 
-    console.log('useCache is set to', _useCache);
     sessionStorage.setItem('useCache', _useCache);
     this.setState(Object.assign({}, this.state, {
       useCache: _useCache,

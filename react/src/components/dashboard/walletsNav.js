@@ -72,7 +72,7 @@ class WalletsNav extends React.Component {
           <div
             className="page-header page-header-bordered header-easydex"
             id="header-dashboard"
-            style={{ paddingBottom: '20px', marginBottom: this.props.ActiveCoin.mode !== 'basilisk' && this.props.Dashboard.progress ? '0' : '30px' }}>
+            style={{ paddingBottom: '20px', marginBottom: this.props.ActiveCoin.mode === 'basilisk' ? '30px' : '0' }}>
             <ol className="breadcrumb">
               <strong>{ translate('INDEX.MY') } <span id="edexcoin-active">{ this.props && this.props.ActiveCoin ? this.props.ActiveCoin.coin : '-' }</span> { translate('INDEX.ADDRESS') }: </strong> <span id="edexcoin_active_addr">{ this.props && this.props.Dashboard && this.props.Dashboard.activeHandle ? this.props.Dashboard.activeHandle[this.props.ActiveCoin.coin] : '-' }</span> <button className="btn btn-default btn-xs clipboard-edexaddr" id="edexcoin_active_addr_clipboard" onClick={ () => this.copyMyAddress(this.props.Dashboard.activeHandle[this.props.ActiveCoin.coin]) }><i className="icon wb-copy" aria-hidden="true"></i> { translate('INDEX.COPY') }</button>
             </ol>

@@ -1,13 +1,10 @@
 import React from 'react';
 import { translate } from '../../translate/translate';
 import {
-  getNewKMDAddresses,
-  copyCoinAddress
+  copyCoinAddress,
+  getNewKMDAddresses
 } from '../../actions/actionCreators';
 import Store from '../../store';
-
-// TODO: implement sorting
-// TODO: importaddress, importprivkey(?)
 
 class WalletsNativeReceive extends React.Component {
   constructor(props) {

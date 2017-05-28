@@ -299,7 +299,7 @@ class Settings extends React.Component {
     const _translationComponents = translate(_translationID).split('<br>');
 
     return _translationComponents.map((_translation) =>
-      <span>
+      <span key={ `settings-label-${Math.random(0, 9) * 10}` }>
         { _translation }
         <br />
       </span>

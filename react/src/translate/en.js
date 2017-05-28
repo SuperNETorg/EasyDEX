@@ -1,6 +1,7 @@
 export const _lang = {
   'EN': {
     'INDEX': {
+      'RESTART': 'Restart',
       'WALLET_INFO': 'Wallet Info',
       'ADD_COIN': 'Add Coin',
       'STOP': 'Stop',

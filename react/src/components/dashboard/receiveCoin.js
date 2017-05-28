@@ -1,10 +1,9 @@
 import React from 'react';
 import { translate } from '../../translate/translate';
 import {
+  copyCoinAddress,
   checkAddressBasilisk,
-  importAddressBasilisk,
-  validateAddressBasilisk,
-  copyCoinAddress
+  validateAddressBasilisk
 } from '../../actions/actionCreators';
 import Store from '../../store';
 

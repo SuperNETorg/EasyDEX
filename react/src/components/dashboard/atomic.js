@@ -481,7 +481,7 @@ class Atomic extends React.Component {
 
   render() {
     return (
-      <div className="page" style={{ marginLeft: '0' }}>
+      <div className="page margin-left-0">
         <div className="page-content" id="section-iguana-atomic-explorer">
           <div className="row" id="atomic-explorer">
             <div className="col-xlg-12 col-md-12">
@@ -502,7 +502,7 @@ class Atomic extends React.Component {
                       </select>
                     </div>
                   </div>
-                  <div className="col-sm-4 col-xs-12" style={{ textAlign: 'center' }}>
+                  <div className="col-sm-4 col-xs-12 text-align-center">
                     <select
                       className="form-control form-material"
                       id="atomic_explorer_select_command_options"
@@ -511,7 +511,7 @@ class Atomic extends React.Component {
                       { this.renderAtomicOptions() }
                     </select>
                   </div>
-                  <div className="col-sm-4 col-xs-12" style={{ textAlign: 'center' }}>
+                  <div className="col-sm-4 col-xs-12 text-align-center">
                     <input
                       type="text"
                       className="form-control"
@@ -520,7 +520,7 @@ class Atomic extends React.Component {
                       placeholder={ translate('ATOMIC.INPUT_PLACEHOLDER') }
                       onChange={ this.updateInput } />
                   </div>
-                  <div className="col-sm-12 col-xs-12" style={{ textAlign: 'center' }}>
+                  <div className="col-sm-12 col-xs-12 text-align-center">
                     <button
                       type="button"
                       className="btn btn-primary waves-effect waves-light"

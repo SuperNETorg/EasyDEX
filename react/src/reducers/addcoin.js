@@ -1,4 +1,6 @@
-import { DISPLAY_ADDCOIN_MODAL } from '../actions/actionCreators'
+import {
+  DISPLAY_ADDCOIN_MODAL
+} from '../actions/storeType';
 
 export function AddCoin(state = {
   display: false,

@@ -11,5 +11,4 @@ try {
 
 export function iguanaSetRPCAuth() {
   sessionStorage.setItem('IguanaRPCAuth', appSessionHash);
-  console.log('passphraseGen', appSessionHash);
 }

@@ -3,11 +3,11 @@ import { translate } from '../../translate/translate';
 import {
   dashboardChangeSection,
   toggleAddcoinModal,
-  logout,
   stopInterval,
-  toggleSyncOnlyModal,
   startInterval,
-  getSyncOnlyForks
+  toggleSyncOnlyModal,
+  getSyncOnlyForks,
+  logout
 } from '../../actions/actionCreators';
 import Store from '../../store';
 
@@ -44,7 +44,7 @@ class Navbar extends React.Component {
   openSyncOnlyModal() {
     Store.dispatch(getSyncOnlyForks());
 
-    var _iguanaActiveHandle = setInterval(function() {
+    const _iguanaActiveHandle = setInterval(function() {
       Store.dispatch(getSyncOnlyForks());
     }.bind(this), 3000);
     Store.dispatch(startInterval('syncOnly', _iguanaActiveHandle));
@@ -63,7 +63,7 @@ class Navbar extends React.Component {
           <button type="button" className="navbar-toggle collapsed">
             <i className="icon md-more" aria-hidden="true"></i>
           </button>
-          <div className="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+          <div className="navbar-brand navbar-brand-center site-gridmenu-toggle">
             <img
               className="navbar-brand-logo hidden-xs" src="assets/images/easydex-logo-dashboard.png"
               title="SuperNET Iguana" />
@@ -81,7 +81,7 @@ class Navbar extends React.Component {
         <div className="navbar-container container-fluid">
           <div className="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
             <ul className="nav navbar-toolbar">
-              <li className="hidden-float" id="toggleMenubar" style={{ display: 'none' }}>
+              <li className="hidden-float display-none" id="toggleMenubar">
                 <a role="button">
                   <i className="icon hamburger hamburger-arrow-left">
                     <span className="sr-only">{ translate('INDEX.TOGGLE_MENUBAR') }</span>
@@ -100,8 +100,7 @@ class Navbar extends React.Component {
                 </a>
               </li>
               <li
-                className={ this.props.Dashboard.activeSection === 'jumblr' ? 'active nav-top-menu' : 'nav-top-menu' }
-                style={{ display: 'none' }}>
+                className={'display-none ' + (this.props.Dashboard.activeSection === 'jumblr' ? 'active nav-top-menu' : 'nav-top-menu') }>
                 <a id="nav-jumblr" onClick={ () => this.dashboardChangeSection('jumblr') }>
                   <i className="site-menu-icon" aria-hidden="true"></i> Jumblr
                 </a>
@@ -122,8 +121,7 @@ class Navbar extends React.Component {
                 <a
                   role="menuitem"
                   id="btn_edexcoin_addcoin"
-                  style={{ paddingBottom: '10px', paddingTop: '16px' }}
-                  className="pointer"
+                  className="pointer padding-bottom-10 padding-top-16"
                   onClick={ this.toggleAddCoinModal }>
                   <span>
                     <img src="assets/images/icons/activatecoin.png" alt={ translate('INDEX.ADD_COIN') } />

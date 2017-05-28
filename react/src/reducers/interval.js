@@ -1,4 +1,7 @@
-import { START_INTERVAL, STOP_INTERVAL } from '../actions/actionCreators'
+import {
+  START_INTERVAL,
+  STOP_INTERVAL
+} from '../actions/storeType'
 
 export function Interval(state = {
   interval: {},

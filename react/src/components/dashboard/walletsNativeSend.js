@@ -3,10 +3,10 @@ import Config from '../../config';
 import { translate } from '../../translate/translate';
 import { secondsToString } from '../../util/time';
 import {
-  sendNativeTx,
-  getKMDOPID,
   resolveOpenAliasAddress,
-  triggerToaster
+  triggerToaster,
+  sendNativeTx,
+  getKMDOPID
 } from '../../actions/actionCreators';
 import Store from '../../store';
 

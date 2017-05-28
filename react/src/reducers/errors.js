@@ -1,4 +1,6 @@
-import { SERVICE_ERROR } from '../actions/actionCreators';
+import {
+  SERVICE_ERROR
+} from '../actions/storeType';
 
 export function Errors(state = {
   errors: {},
