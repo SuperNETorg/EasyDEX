@@ -97,7 +97,7 @@ class WalletsBalance extends React.Component {
                 <h4>{ translate('INDEX.ACTIVATING_WALLET_RT') }</h4>
                 <p id="edexcoin-wallet-waitingrt-alert-text">{ translate('INDEX.IGUANA_FULL_MODE_SYNC_P1') }</p>
                 <p>{ translate('INDEX.IGUANA_FULL_MODE_SYNC_P2') }</p>
-                <p style={{ fontWeight: '600' }}>{ this.renderLB('INDEX.IGUANA_FULL_MODE_SYNC_P3') }</p>
+                <p className="font-weight-600">{ this.renderLB('INDEX.IGUANA_FULL_MODE_SYNC_P3') }</p>
               </div>
 
               <div role="alert" className="alert alert-info alert-dismissible" id="edexcoin-wallet-waitingcache-alert">
@@ -107,7 +107,7 @@ class WalletsBalance extends React.Component {
                 <h4>{ translate('INDEX.FETCHING_COIN_DATA') }</h4>
                 <p id="edexcoin-wallet-waitingcache-alert-text">{ translate('INDEX.IGUANA_FULL_MODE_SYNC_P1') }</p>
                 <p>{ translate('INDEX.IGUANA_FULL_MODE_SYNC_P2') }</p>
-                <p style={{ fontWeight: '600' }}>{ this.renderLB('INDEX.IGUANA_FULL_MODE_SYNC_P3') }</p>
+                <p className="font-weight-600">{ this.renderLB('INDEX.IGUANA_FULL_MODE_SYNC_P3') }</p>
               </div>
             </div>
             <div
@@ -120,7 +120,7 @@ class WalletsBalance extends React.Component {
                       <div className="pull-left padding-vertical-10">
                         <i className="icon fa-eye font-size-24 vertical-align-bottom margin-right-5"></i>{ translate('INDEX.BALANCE')}
                       </div>
-                      <span className="pull-right padding-top-10" style={{ fontSize: '22px' }}>
+                      <span className="pull-right padding-top-10 font-size-22">
                         { this.renderBalance('main') } { this.props.ActiveCoin.coin }
                       </span>
                     </div>
@@ -139,7 +139,7 @@ class WalletsBalance extends React.Component {
                       <div className="pull-left padding-vertical-10">
                         <i className="icon fa-money font-size-24 vertical-align-bottom margin-right-5"></i>{ translate('INDEX.INTEREST_EARNED') }
                       </div>
-                      <span className="pull-right padding-top-10" style={{ fontSize: '22px' }}>
+                      <span className="pull-right padding-top-10 font-size-22">
                         { this.renderBalance('interest') } { this.props.ActiveCoin.coin }
                       </span>
                     </div>
@@ -158,7 +158,7 @@ class WalletsBalance extends React.Component {
                       <div className="pull-left padding-vertical-10">
                         <i className="icon fa-bullseye font-size-24 vertical-align-bottom margin-right-5"></i>{ translate('INDEX.TOTAL_BALANCE') }
                       </div>
-                      <span className="pull-right padding-top-10" style={{ fontSize: '22px' }}>
+                      <span className="pull-right padding-top-10 font-size-22">
                         { this.renderBalance('total') } { this.props.ActiveCoin.coin }
                       </span>
                     </div>

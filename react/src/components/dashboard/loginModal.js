@@ -76,7 +76,7 @@ class LoginModal extends React.Component {
                         </div>
 
                         <div id="section-login" className={ this.state.activeLoginSection === 'login' ? 'show' : 'hide' }>
-                          <h4 style={{ color: '#fff' }} id="login-welcome">{ translate('INDEX.WELCOME_LOGIN') }</h4>
+                          <h4 className="color-white" id="login-welcome">{ translate('INDEX.WELCOME_LOGIN') }</h4>
                           <div className="login-form">
                             <div className="form-group form-material floating">
                               <input

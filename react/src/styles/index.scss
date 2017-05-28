@@ -1,4 +1,6 @@
 @import '../components/addcoin/addcoin.scss';
+@import '../components/dashboard/dashboard.scss';
+
 @import '../assets/global/css/bootstrap.min.css';
 @import '../assets/global/css/bootstrap-extend.min.css';
 @import '../assets/global/css/alertify.css';
@@ -387,6 +389,10 @@ input:checked + .slider:before {
   display: none;
 }
 
+.notifications-modal {
+  color: #757575;
+}
+
 .notifications {
   .notice {
     position: relative;
@@ -485,6 +491,16 @@ input:checked + .slider:before {
     background-color: #f2dede;
     border-color: #ebccd1;
   }
+}
+
+#js-copytextarea {
+  opacity: 0;
+  height: 10px;
+  width: 200px;
+}
+
+#app {
+  height: 100%;
 }
 
 /*.toaster .single-toast:nth-child(0) {

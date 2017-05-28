@@ -1,4 +1,6 @@
-import { ATOMIC } from '../actions/actionCreators';
+import {
+  ATOMIC
+} from '../actions/storeType';
 
 export function Atomic(state = {
   response: null,

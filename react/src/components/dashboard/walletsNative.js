@@ -13,6 +13,14 @@ class WalletsNative extends React.Component {
     super(props);
   }
 
+  defaultBG() {
+    if (this.props.ActiveCoin.coin === 'REVS') {
+      return 'supernet';
+    } else {
+      return this.props.ActiveCoin.coin.toLowerCase();
+    }
+  }
+
   // <WalletsNativeAlert {...this.props} />
   render() {
     if (this.props &&
@@ -21,10 +29,10 @@ class WalletsNative extends React.Component {
       return (
         <div className="page" style={{ marginLeft: '0' }}>
           <div id="section-extcoin" style={{ paddingTop: '0' }}>
-            <div id="easydex-header-div" style={{ 'backgroundImage': 'url("assets/images/bg/' + this.props.ActiveCoin.coin.toLowerCase() + '_transparent_header_bg.png")' }}>
+            <div id="easydex-header-div" style={{ 'backgroundImage': 'url("assets/images/bg/' + this.defaultBG() + '_transparent_header_bg.png")', backgroundColor: '#fff' }}>
               <ol className="breadcrumb">
                 <li className="header-easydex-section">
-                  <img src={ 'assets/images/native/' + this.props.ActiveCoin.coin.toLowerCase() + '_header_title_logo.png' } /> <span style={{ fontSize: '35px', verticalAlign: 'middle' }} className={ this.props.ActiveCoin.coin === 'KMD' ? 'hide' : '' }>{ this.props.ActiveCoin.coin }</span>
+                  <img src={ 'assets/images/native/' + this.defaultBG() + '_header_title_logo.png' } /> <span style={{ fontSize: '35px', verticalAlign: 'middle' }} className={ this.props.ActiveCoin.coin === 'KMD' ? 'hide' : '' }>{ this.props.ActiveCoin.coin }</span>
                 </li>
               </ol>
             </div>

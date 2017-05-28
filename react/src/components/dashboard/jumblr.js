@@ -22,7 +22,7 @@ class Jumblr extends React.Component {
     const _translationComponents = translate(_translationID).split('<br>');
 
     return _translationComponents.map((_translation) =>
-      <span>
+      <span key={ `jumblr-label-${Math.random(0, 9) * 10}` }>
         {_translation}
         <br />
       </span>
@@ -31,16 +31,16 @@ class Jumblr extends React.Component {
 
   render() {
     return (
-      <div className="page" style={{ marginLeft: '0' }}>
+      <div className="page margin-left-0">
         <WalletsHeader activeSection="jumblr" />
-        <div className="page-content" id="section-jumblr" style={{ marginTop: '30px' }}>
+        <div className="page-content margin-top-30" id="section-jumblr">
           <div className="row" id="jumblr_dashboard">
             <div className="col-xs-12" id="jumblr_testing_alert">
               <div className="alert alert-danger" role="alert">
                 <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
-                <span style={{ fontSize: '24px', textAlign: 'center' }}>
+                <span className="jumblr-header">
                   <i className="icon fa-paw" aria-hidden="true"></i> { translate('JUMBLR.NOTICE') }
                 </span>
                 <br />
@@ -53,7 +53,7 @@ class Jumblr extends React.Component {
                 <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
-                <span style={{ fontSize: '24px', textAlign: 'center' }}>
+                <span className="jumblr-header">
                   <i className="icon fa-paw" aria-hidden="true"></i> { translate('JUMBLR.NEED_NATIVE') }
                 </span>
                 <br />

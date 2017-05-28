@@ -3,13 +3,13 @@ import { translate } from '../../translate/translate';
 import {
   toggleAddcoinModal,
   iguanaWalletPassphrase,
-  createNewWallet,
   iguanaActiveHandle,
-  toggleSyncOnlyModal,
   startInterval,
   stopInterval,
+  getDexCoins,
+  toggleSyncOnlyModal,
   getSyncOnlyForks,
-  getDexCoins
+  createNewWallet
 } from '../../actions/actionCreators';
 import Store from '../../store';
 import { PassPhraseGenerator } from '../../util/crypto/passphrasegenerator';
@@ -41,7 +41,7 @@ class Login extends React.Component {
   openSyncOnlyModal() {
     Store.dispatch(getSyncOnlyForks());
 
-    var _iguanaActiveHandle = setInterval(function() {
+    const _iguanaActiveHandle = setInterval(function() {
       Store.dispatch(getSyncOnlyForks());
     }.bind(this), 3000);
     Store.dispatch(startInterval('syncOnly', _iguanaActiveHandle));
@@ -79,7 +79,7 @@ class Login extends React.Component {
       });
 
       if (!this.props.Interval.interval.activeCoins) {
-        var _iguanaActiveCoins = setInterval(function() {
+        const _iguanaActiveCoins = setInterval(function() {
           Store.dispatch(getDexCoins());
         }.bind(this), 10000);
         Store.dispatch(startInterval('activeCoins', _iguanaActiveCoins));

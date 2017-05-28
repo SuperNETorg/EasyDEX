@@ -16,7 +16,7 @@ import {
   DASHBOARD_GET_NOTARIES_LIST,
   DASHBOARD_DISPLAY_NOTARIES_MODAL,
   DASHBOARD_ACTIVE_ADDRESS,
-} from '../actions/actionCreators';
+} from '../actions/storeType';
 
 // TODO: refactor
 

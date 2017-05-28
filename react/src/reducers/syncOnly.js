@@ -1,7 +1,7 @@
 import {
   SYNC_ONLY_MODAL_TOGGLE,
   SYNC_ONLY_DATA
-} from '../actions/actionCreators';
+} from '../actions/storeType';
 
 export function SyncOnly(state = {
   display: false,

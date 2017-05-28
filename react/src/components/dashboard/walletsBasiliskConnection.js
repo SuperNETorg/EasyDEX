@@ -27,16 +27,16 @@ class WalletsBasiliskConnection extends React.Component {
           <div className="modal show" id="RefreshBasiliskConnectionsMdl" aria-hidden="false" role="dialog">
             <div className="modal-dialog modal-center modal-md">
               <div className="modal-content">
-                <div className="modal-header bg-orange-a400 wallet-send-header" style={{ borderRadius: '3px 3px 0 0' }}>
+                <div className="modal-header bg-orange-a400 wallet-send-header">
                   <h4 className="modal-title white">
-                    <span className="icon fa-refresh" style={{ margin: '0' }}></span> { translate('INDEX.REFRESHING_BASILISK_NET') }...
+                    <span className="icon fa-refresh no-margin"></span> { translate('INDEX.REFRESHING_BASILISK_NET') }...
                   </h4>
                   <button type="button" className="close btn-close" aria-label="Close" onClick={ this.basiliskConnectionAction }>
                     <span aria-hidden="true">&times;</span>
                     <span className="sr-only">{ translate('INDEX.CLOSE') }</span>
                   </button>
                 </div>
-                <div className="modal-body" style={{ textAlign: 'center' }}>
+                <div className="modal-body text-align-center">
                   <div className="loader-wrapper active">
                     <div className="loader-layer loader-blue">
                       <div className="loader-circle-left">
@@ -81,7 +81,7 @@ class WalletsBasiliskConnection extends React.Component {
                   <div className="progress progress-sm">
                     <div className="progress-bar progress-bar-info progress-bar-striped active" style={{ width: Math.floor(this.props.Dashboard.connectedNotaries.current * 100 / this.props.Dashboard.connectedNotaries.total) + '%', fontSize: '80%' }} role="progressbar" id="basilisk-connections-refresh-progress-bar"></div>
                   </div>
-                  <pre id="basilisk-connections-refresh-status-output" style={{ padding: '0' }}>
+                  <pre id="basilisk-connections-refresh-status-output no-padding">
                   { this.props.Dashboard.connectedNotaries.failedToConnectNodes ? 'Failed: ' + this.props.Dashboard.connectedNotaries.failedToConnectNodes : null }
                   </pre>
                 </div>

@@ -7,23 +7,26 @@ import {
   secondsElapsedToString,
   secondsToString
 } from '../../util/time';
-import { edexGetTxIDList, edexRemoveTXID } from '../../util/cacheFormat';
 import {
-  sendToAddress,
+  edexGetTxIDList,
+  edexRemoveTXID
+} from '../../util/cacheFormat';
+import {
   sendFromAddress,
   sendNativeTx,
   getKMDOPID,
   resolveOpenAliasAddress,
   triggerToaster,
+  basiliskRefresh,
+  shepherdGroomPostPromise,
+  edexGetTransaction,
+  getCacheFile,
+  fetchUtxoCache,
+  sendToAddress,
   iguanaUTXORawTX,
   clearLastSendToResponseState,
   sendToAddressStateAlt,
-  dexSendRawTX,
-  fetchUtxoCache,
-  basiliskRefresh,
-  edexGetTransaction,
-  getCacheFile,
-  shepherdGroomPostPromise
+  dexSendRawTX
 } from '../../actions/actionCreators';
 import Store from '../../store';
 

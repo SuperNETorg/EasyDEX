@@ -4,7 +4,7 @@ import {
   GET_DEBUG_LOG,
   LOAD_APP_CONFIG,
   LOAD_APP_INFO
-} from '../actions/actionCreators';
+} from '../actions/storeType';
 
 export function Settings(state = {
   wifkey: null,

@@ -8,16 +8,15 @@ import {
   startInterval,
   stopInterval,
   iguanaEdexBalance,
-  getSyncInfoNative,
-  getKMDBalanceTotal,
-  getNativeTxHistory,
   getKMDAddressesNative,
-  getKMDOPID,
   getFullTransactionsList,
   getBasiliskTransactionsList,
+  changeActiveAddress,
   getShepherdCache,
   fetchNewCacheData,
-  changeActiveAddress
+  getKMDOPID,
+  getNativeTxHistory,
+  getKMDBalanceTotal
 } from '../../actions/actionCreators';
 import Store from '../../store';
 

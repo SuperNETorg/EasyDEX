@@ -9,7 +9,7 @@ import {
   VIEW_CACHE_DATA,
   LOG_GUI_HTTP,
   TOGGLE_NOTIFICATIONS_MODAL
-} from '../actions/actionCreators';
+} from '../actions/storeType';
 
 export function Dashboard(state = {
   activeSection: 'wallets',

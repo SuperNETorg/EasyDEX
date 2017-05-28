@@ -3,9 +3,9 @@ import { translate } from '../../translate/translate';
 import {
   addCoin,
   toggleAddcoinModal,
+  triggerToaster,
   shepherdGetCoinList,
-  shepherdPostCoinList,
-  triggerToaster
+  shepherdPostCoinList
 } from '../../actions/actionCreators';
 import Store from '../../store';
 import AddCoinOptionsCrypto from './addcoinOptionsCrypto';

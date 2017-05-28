@@ -344,13 +344,13 @@ class CoinTile extends React.Component {
 
   render() {
     return (
-      <div className="page-aside" style={{ paddingTop: '80px' }}>
+      <div className="page-aside padding-top-80">
         <div className="page-aside-switch">
           <i className="icon md-chevron-left" aria-hidden="true"></i>
           <i className="icon md-chevron-right" aria-hidden="true"></i>
         </div>
         <div className="page-aside-inner">
-          <div className="search-wallet-widgets panel" style={{ display: 'none' }}>
+          <div className="search-wallet-widgets panel display-none">
             <div className="panel-heading">
               <div className="panel-actions">
                 <div className="input-search input-group-sm">

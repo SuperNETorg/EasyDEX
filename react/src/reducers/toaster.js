@@ -1,4 +1,7 @@
-import {ADD_TOASTER_MESSAGE, REMOVE_TOASTER_MESSAGE} from "../actions/actionCreators";
+import {
+  ADD_TOASTER_MESSAGE,
+  REMOVE_TOASTER_MESSAGE
+} from '../actions/storeType';
 
 export function toaster(state = {
   toasts: [],

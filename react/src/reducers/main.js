@@ -2,7 +2,7 @@ import {
   GET_ACTIVE_COINS,
   LOGIN,
   ACTIVE_HANDLE
-} from '../actions/actionCreators';
+} from '../actions/storeType';
 
 export function Main(state = {
   isLoggedIn: false,

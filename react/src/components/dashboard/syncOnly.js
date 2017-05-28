@@ -1,11 +1,11 @@
 import React from 'react';
 import { translate } from '../../translate/translate';
 import {
-  toggleSyncOnlyModal,
   stopInterval,
+  addCoin,
+  toggleSyncOnlyModal,
   stopIguanaFork,
-  restartIguanaInstance,
-  addCoin
+  restartIguanaInstance
 } from '../../actions/actionCreators';
 import Store from '../../store';
 
@@ -231,7 +231,8 @@ class SyncOnly extends React.Component {
       const forkInfo = this.props.SyncOnly.forks[port];
 
       if (forkInfo &&
-          forkInfo.registry && forkInfo.getinfo) {
+          forkInfo.registry &&
+          forkInfo.getinfo) {
         items.push(
           <div key={ port } style={{ width: '100%' }} className="padding-bottom-60">
             <div className="avatar">
