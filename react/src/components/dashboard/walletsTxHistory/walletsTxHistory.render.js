@@ -1,6 +1,6 @@
 import React from 'react';
 import { translate } from '../../../translate/translate';
-import { secondsToString } from '../../../util/time';
+
 
 export const PaginationItemsPerPageSelectorRender = function() {
   return (
@@ -53,6 +53,10 @@ export const PaginationRender = function(paginationStart, paginationEnd, paginat
     </div>
   );
 };
+
+export const TxHistoryTableRender = () => {
+  return ()
+}
 
 export const TxHistoryListRender = function() {
   return this.state.itemsList.map((tx, index) =>

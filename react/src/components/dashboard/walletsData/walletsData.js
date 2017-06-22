@@ -28,6 +28,7 @@ import {
   AddressListRender,
   WalletsDataRender
 } from  './walletsData.render';
+import TransactionHistory from '../walletsTxHistory/TransactionHistory';
 
 import { SocketProvider } from 'socket.io-react';
 import io from 'socket.io-client';
@@ -484,7 +485,7 @@ class WalletsData extends React.Component {
         this.props.ActiveCoin.mode !== 'native' &&
         !this.props.ActiveCoin.send &&
         !this.props.ActiveCoin.receive) {
-      return WalletsDataRender.call(this);
+      return <TransactionHistory />;
     } else {
       return null;
     }
