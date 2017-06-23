@@ -1,9 +1,8 @@
 import React, {Component, PropTypes} from 'react';
 import ReactTable from 'react-table';
 import { connect } from 'react-redux';
-// import 'react-table/react-table.css';
 
-import { translate } from '../../../translate/translate';
+import TxType from './TxType'
 import { toggleDashboardTxInfoModal } from '../../../actions/actionCreators';
 import { secondsToString } from '../../../util/time';
 import Store from '../../../store';
@@ -27,13 +26,13 @@ class TransactionHistory extends Component {
     }
   }
 
-
   render() {
-
     const columns = [
       {
         Header: 'Type',
         accessor: 'type',
+        sortable: false,
+        Cell: props => <TxType category={props.category} />
       },
       {
         Header: 'Confirmations',
@@ -61,8 +60,7 @@ class TransactionHistory extends Component {
         )
       }
     ]
-    console.error(`-------------- ${JSON.stringify(this.state)} -----------`);
-    console.error(`-------------- ${JSON.stringify(this.props.txHistory)} -----------`);
+
     if (this.state.isLoading) {
       return (<div>Loading ...</div>);
     } else {
