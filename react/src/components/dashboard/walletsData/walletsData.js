@@ -1,7 +1,9 @@
 import React from 'react';
+import ReactTable from 'react-table';
 import Config from '../../../config';
 import { translate } from '../../../translate/translate';
 import { sortByDate } from '../../../util/sort';
+import { secondsToString } from '../../../util/time';
 import {
   basiliskRefresh,
   basiliskConnection,
@@ -28,7 +30,6 @@ import {
   AddressListRender,
   WalletsDataRender
 } from  './walletsData.render';
-import TransactionHistory from '../walletsTxHistory/TransactionHistory';
 
 import { SocketProvider } from 'socket.io-react';
 import io from 'socket.io-client';
@@ -342,6 +343,50 @@ class WalletsData extends React.Component {
   }
 
   renderTxHistoryList() {
+    const columns = [
+      {
+        Header: translate('INDEX.DIRECTION'),
+        accessor: 'type',
+        sortable: false,
+        Cell: props => this.renderTxType(props.value),
+        filterable: false,
+      },
+      {
+        Header: translate('INDEX.CONFIRMATIONS'),
+        accessor: 'confirmations',
+        filterable: false,
+      },
+      {
+        Header: translate('INDEX.AMOUNT'),
+        accessor: 'amount',
+        filterable: false,
+      },
+      {
+        Header: translate('INDEX.TIME'),
+        accessor: 'timestamp',
+        Cell: props => secondsToString(props.value),
+        filterable: false,
+      },
+      {
+        Header: translate('INDEX.TX_DETAIL'),
+        accessor: 'txid',
+        Cell: (props) => {
+          const showTxInfo = this.props.ActiveCoin.showTransactionInfo;
+          const index = props.index;
+          return (
+            <button
+              type="button"
+              className="btn btn-xs white btn-info waves-effect waves-light btn-kmdtxid"
+              onClick={() => this.toggleTxInfoModal(!showTxInfo, index)}
+            >
+              <i className="icon fa-search" />
+            </button>
+          );
+        },
+        filterMethod: (filter, row) => (row[filter.id].includes(filter.value)),
+
+      },
+    ];
     if (this.state.itemsList === 'loading') {
       return (
         <div>{ translate('INDEX.LOADING_HISTORY') }...</div>
@@ -354,13 +399,17 @@ class WalletsData extends React.Component {
       if (this.state.itemsList &&
           this.state.itemsList.length &&
           this.state.itemsList !== 'no data') {
-        return this.state.itemsList.map((tx, index) =>
-          TxHistoryListRender.call(
-            this,
-            tx,
-            index
-          )
-        );
+        return (
+          <ReactTable
+            className="-striped"
+            data={this.state.itemsList}
+            filterable
+            columns={columns}
+            pageSizeOptions={[5, 10, 20, 25, 50, 100]}
+            defaultPageSize={5}
+            showPagination
+            sortable
+          />);
       }
     }
   }
@@ -485,7 +534,11 @@ class WalletsData extends React.Component {
         this.props.ActiveCoin.mode !== 'native' &&
         !this.props.ActiveCoin.send &&
         !this.props.ActiveCoin.receive) {
-      return <TransactionHistory />;
+          return (
+            <div>
+              {WalletsDataRender.call(this)}
+            </div>
+          )
     } else {
       return null;
     }

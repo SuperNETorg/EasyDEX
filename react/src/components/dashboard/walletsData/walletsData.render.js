@@ -43,12 +43,12 @@ export const PaginationRender = function(paginationFrom, paginationTo) {
     <div className="row unselectable">
       <div className="col-sm-5">
         <div className="dataTables_info">
-          { translate('INDEX.SHOWING') } 
-          { paginationFrom } 
-          { translate('INDEX.TO_ALT') } 
-          { paginationTo } 
-          { translate('INDEX.OF') } 
-          { this.props.ActiveCoin.txhistory.length } 
+          { translate('INDEX.SHOWING') }
+          { paginationFrom }
+          { translate('INDEX.TO_ALT') }
+          { paginationTo }
+          { translate('INDEX.OF') }
+          { this.props.ActiveCoin.txhistory.length }
           { translate('INDEX.ENTRIES_SM') }
         </div>
       </div>
@@ -214,31 +214,7 @@ export const WalletsDataRender = function() {
                       </div>
                     </div>
                     <div className="row">
-                      <table className="table table-hover dataTable table-striped" width="100%">
-                        <thead>
-                          <tr>
-                            <th>{ translate('INDEX.DIRECTION') }</th>
-                            <th className="hidden-xs hidden-sm">{ translate('INDEX.CONFIRMATIONS') }</th>
-                            <th>{ translate('INDEX.AMOUNT') }</th>
-                            <th>{ translate('INDEX.TIME') }</th>
-                            <th className={ this.props.ActiveCoin.mode === 'basilisk' ? 'hide' : '' }>{ translate('INDEX.DEST_ADDRESS') }</th>
-                            <th className={ this.props.ActiveCoin.mode === 'basilisk' ? 'hidden-xs hidden-sm text-center' : 'hidden-xs hidden-sm' }>{ translate('INDEX.TX_DETAIL') }</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                        { this.renderTxHistoryList() }
-                        </tbody>
-                        <tfoot>
-                          <tr>
-                            <th>{ translate('INDEX.DIRECTION') }</th>
-                            <th>{ translate('INDEX.CONFIRMATIONS') }</th>
-                            <th>{ translate('INDEX.AMOUNT') }</th>
-                            <th>{ translate('INDEX.TIME') }</th>
-                            <th className={ this.props.ActiveCoin.mode === 'basilisk' ? 'hide' : '' }>{ translate('INDEX.DEST_ADDRESS') }</th>
-                            <th className={ this.props.ActiveCoin.mode === 'basilisk' ? 'hidden-xs hidden-sm text-center' : 'hidden-xs hidden-sm' }>{ translate('INDEX.TX_DETAIL') }</th>
-                          </tr>
-                        </tfoot>
-                      </table>
+                      { this.renderTxHistoryList() }
                     </div>
                     { this.renderPagination() }
                   </div>
