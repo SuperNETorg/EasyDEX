@@ -156,7 +156,7 @@ export const SendApiTypeSelectorRender = function () {
           </div>
         </span>
       </div>
-      { this.stateisCameraFeatureDetected &&
+      { this.state.isCameraFeatureDetected &&
         <div className="col-lg-4 text-right">
           <QRModal
             mode="scan"
