@@ -36,124 +36,141 @@ const WalletsTxInfoRender = function(txInfo) {
                   </li>
                 </ul>
                 <div className="panel-body">
-                  <div className="tab-content">
-                    { this.state.activeTab === 0 &&
-                      <div className="tab-pane active">
+                  { this.state.txDetails &&
+                    <div className="tab-content">
+                      { this.state.activeTab === 0 &&
+                        <div className="tab-pane active">
                         <table className="table table-striped">
-                          <tbody>
-                            <tr>
-                              <td>{ translate('TX_INFO.ADDRESS') }</td>
-                              <td>
-                                { txInfo.address }
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>{ translate('TX_INFO.AMOUNT') }</td>
-                              <td>
-                                { txInfo.amount }
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>{ translate('TX_INFO.CATEGORY') }</td>
-                              <td>
-                                { txInfo.category || txInfo.type }
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>{ translate('TX_INFO.CONFIRMATIONS') }</td>
-                              <td>
-                                { txInfo.confirmations }
-                              </td>
-                            </tr>
-                            { txInfo.blockhash &&
+                            <tbody>
+                              
                               <tr>
-                                <td>blockhash</td>
+                                <td>{ translate('TX_INFO.ADDRESS') }</td>
                                 <td>
-                                  { txInfo.blockhash }
+                                  { this.state.txDetails.details[0].address }
                                 </td>
                               </tr>
-                            }
-                            { (txInfo.blocktime || txInfo.timestamp) &&
                               <tr>
-                                <td>blocktime</td>
+                                <td>{ translate('TX_INFO.AMOUNT') }</td>
                                 <td>
-                                  { secondsToString(txInfo.blocktime || txInfo.timestamp) }
+                                  { txInfo.amount }
                                 </td>
                               </tr>
-                            }
+                              <tr>
+                                <td>{ translate('TX_INFO.CATEGORY') }</td>
+                                <td>
+                                  { this.state.txDetails.details[0].category || txInfo.type }
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>{ translate('TX_INFO.CONFIRMATIONS') }</td>
+                                <td>
+                                  { this.state.txDetails.confirmations }
+                                </td>
+                              </tr>
+                              { this.state.txDetails.blockindex &&
+                                <tr>
+                                  <td>blockindex</td>
+                                  <td>
+                                    { this.state.txDetails.blockindex }
+                                  </td>
+                                </tr>
+                              }
+                              { this.state.txDetails.blockhash &&
+                                <tr>
+                                  <td>blockhash</td>
+                                  <td>
+                                    { this.state.txDetails.blockhash }
+                                  </td>
+                                </tr>
+                              }
+                              { (this.state.txDetails.blocktime || this.state.txDetails.timestamp) &&
+                                <tr>
+                                  <td>blocktime</td>
+                                  <td>
+                                    { secondsToString(this.state.txDetails.blocktime || this.state.txDetails.timestamp) }
+                                  </td>
+                                </tr>
+                              }
+                              <tr>
+                                <td>txid</td>
+                                <td>
+                                  { this.state.txDetails.txid }
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>walletconflicts</td>
+                                <td>
+                                  { this.state.txDetails.walletconflicts.length }
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>time</td>
+                                <td>
+                                  { secondsToString(this.state.txDetails.time) }
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>timereceived</td>
+                                <td>
+                                  { secondsToString(this.state.txDetails.timereceived) }
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      }
+                      { this.state.activeTab === 1 &&
+                        <div className="tab-pane active">
+                          <table className="table table-striped">
+                            <tbody>
                             <tr>
-                              <td>txid</td>
+                              <td>vjoinsplit</td>
                               <td>
-                                { txInfo.txid }
+                                { txInfo.vjoinsplit }
                               </td>
                             </tr>
                             <tr>
-                              <td>walletconflicts</td>
+                              <td>details</td>
                               <td>
-                                { txInfo.walletconflicts.length }
+                                { txInfo.details }
                               </td>
                             </tr>
-                            <tr>
-                              <td>time</td>
-                              <td>
-                                { secondsToString(txInfo.time) }
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>timereceived</td>
-                              <td>
-                                { secondsToString(txInfo.timereceived) }
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    }
-                    { this.state.activeTab === 1 &&
-                      <div className="tab-pane active">
-                        <table className="table table-striped">
-                          <tbody>
-                          <tr>
-                            <td>vjoinsplit</td>
-                            <td>
-                              { txInfo.vjoinsplit }
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>details</td>
-                            <td>
-                              { txInfo.details }
-                            </td>
-                          </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    }
-                    { this.state.activeTab === 2 &&
-                      <div className="tab-pane active">
-                        <textarea
-                          className="full-width height-170"
-                          rows="10"
-                          cols="80"
-                          defaultValue={ txInfo.hex }
-                          disabled></textarea>
-                      </div>
-                    }
-                    { this.state.activeTab === 3 &&
-                      <div className="tab-pane active">
-                        <textarea
-                          className="full-width height-400"
-                          rows="40"
-                          cols="80"
-                          defaultValue={ JSON.stringify(txInfo, null, '\t') }
-                          disabled></textarea>
-                      </div>
-                    }
-                  </div>
+                            </tbody>
+                          </table>
+                        </div>
+                      }
+                      { this.state.activeTab === 2 &&
+                        <div className="tab-pane active">
+                          <textarea
+                            className="full-width height-170"
+                            rows="10"
+                            cols="80"
+                            defaultValue={ txInfo.hex }
+                            disabled></textarea>
+                        </div>
+                      }
+                      { this.state.activeTab === 3 &&
+                        <div className="tab-pane active">
+                          <textarea
+                            className="full-width height-400"
+                            rows="40"
+                            cols="80"
+                            defaultValue={ JSON.stringify(this.state.rawTxDetails, null, '\t') }
+                            disabled></textarea>
+                        </div>
+                      }
+                    </div>
+                  }
                 </div>
               </div>
             </div>
             <div className="modal-footer">
+            <button
+                type="button"
+                className="btn btn-sm white btn-info waves-effect waves-light pull-left"
+                onClick={ () => this.openExplorerWindow(txInfo.txid) }>
+                <i className="icon fa-external-link"></i> { translate('INDEX.OPEN_TRANSACTION_IN_EPLORER', this.props.ActiveCoin.coin) }
+              </button>
               <button
                 type="button"
                 className="btn btn-default"

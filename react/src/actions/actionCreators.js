@@ -54,6 +54,7 @@ export * from './actions/update';
 export * from './actions/jumblr';
 export * from './actions/interest';
 export * from './actions/nativeDashboardUpdate';
+export * from './actions/getTxDetails';
 
 export function changeActiveAddress(address) {
   return {
