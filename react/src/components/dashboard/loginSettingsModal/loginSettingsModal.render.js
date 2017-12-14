@@ -7,7 +7,13 @@ export const LoginSettingsModalRender = function() {
   return (
     <div>
       <div className="modal show login-settings-modal ff">
+        <div
+          onClick={ this.closeLoginSettingsModal }
+          className="modal-close-overlay"></div>
         <div className="modal-dialog modal-center modal-lg">
+          <div
+            onClick={ this.closeLoginSettingsModal }
+            className="modal-close-overlay"></div>
           <div className="modal-content">
             <div className="modal-body modal-body-container">
               { this.props.section === 'settings' &&

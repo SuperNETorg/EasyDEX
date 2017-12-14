@@ -13,7 +13,13 @@ const CoindDownModalRender = function() {
       <div
         className={ 'modal modal-3d-sign coind-down-modal ' + (this.state.display ? 'show in' : 'fade hide') }
         id="AddCoinDilogModel-login">
+        <div
+          onClick={ this.dismiss }
+          className="modal-close-overlay"></div>
         <div className="modal-dialog modal-center modal-lg">
+          <div
+            onClick={ this.dismiss }
+            className="modal-close-overlay"></div>
           <div className="modal-content">
             <div className="modal-header bg-orange-a400 wallet-send-header">
               <button

@@ -28,7 +28,7 @@ class PanelSection extends React.Component {
         });
         _pass = !_pass;
       }
-    }, 500);
+    }, 2000);
   }
 
   componentWillUnmount() { // revise(?)

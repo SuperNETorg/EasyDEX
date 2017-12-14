@@ -10,9 +10,6 @@ import rootReducer from './reducers/index';
 const loggerMiddleware = createLogger();
 
 const defaultState = {
-  toaster: null,
-  AddCoin: null,
-  Main: null,
 };
 
 // const enhancers = compose(window.devToolsExtension ? window.devToolsExtension() : f => f);

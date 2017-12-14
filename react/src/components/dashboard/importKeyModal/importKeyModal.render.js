@@ -5,7 +5,13 @@ export const ImportKeyModalRender = function() {
   return (
     <span>
       <div className={ 'modal modal-import-key modal-3d-sign ' + (this.props.Dashboard.displayImportKeyModal ? 'show in' : 'fade hide') }>
+        <div
+          onClick={ this.closeModal }
+          className="modal-close-overlay"></div>
         <div className="modal-dialog modal-center modal-sm">
+          <div
+            onClick={ this.closeModal }
+            className="modal-close-overlay"></div>
           <div className="modal-content">
             <div className="modal-header bg-orange-a400 wallet-send-header">
               <button

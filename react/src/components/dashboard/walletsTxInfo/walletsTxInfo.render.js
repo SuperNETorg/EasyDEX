@@ -9,7 +9,13 @@ const WalletsTxInfoRender = function(txInfo) {
       <div
         className="modal show"
         id="kmd_txid_info_mdl">
+        <div
+          onClick={ this.toggleTxInfoModal }
+          className="modal-close-overlay"></div>
         <div className="modal-dialog modal-center modal-lg">
+          <div
+            onClick={ this.toggleTxInfoModal }
+            className="modal-close-overlay"></div>
           <div className="modal-content">
             <div className="modal-body modal-body-container">
               <div className="panel nav-tabs-horizontal">

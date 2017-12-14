@@ -162,7 +162,13 @@ export const ClaimInterestModalRender = function() {
   return (
     <span onClick={ this.closeDropMenu }>
       <div className={ 'modal modal-claim-interest modal-3d-sign ' + (this.state.open ? 'show in' : 'fade hide') }>
+        <div
+          onClick={ this.closeModal }
+          className="modal-close-overlay"></div>
         <div className="modal-dialog modal-center modal-sm">
+          <div
+            onClick={ this.closeModal }
+            className="modal-close-overlay"></div>
           <div className="modal-content">
             <div className="modal-header bg-orange-a400 wallet-send-header">
               <button

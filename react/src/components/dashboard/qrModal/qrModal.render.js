@@ -66,7 +66,13 @@ export const QRModalReaderRender = function() {
         <div
           className={ 'modal modal-3d-sign ' + (this.state.modalIsOpen ? 'show in' : 'fade hide') }
           id="QRReadModal">
+          <div
+            onClick={ this.closeModal }
+            className="modal-close-overlay"></div>
             <div className="modal-dialog modal-center modal-md">
+              <div
+                onClick={ this.closeModal }
+                className="modal-close-overlay"></div>
               <div className="modal-content">
                 <div className="modal-header bg-orange-a400 wallet-send-header">
                   <button

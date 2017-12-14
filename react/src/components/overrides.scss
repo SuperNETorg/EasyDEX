@@ -632,3 +632,55 @@ select{
   top: 0;
   transform: scale(0.5);
 }
+
+.Select {
+  cursor: pointer;
+
+  * { color: #757575 !important; }
+
+  .Select-clear {
+    display: none;
+  }
+  .Select-control {
+    height: 40px !important;
+
+    .Select-placeholder,
+    .Select-value {
+      line-height: 36px !important;
+    }
+  }
+}
+.Select-menu-outer {
+  max-height: 253px !important;
+}
+.Select-menu {
+  max-height: 250px !important;
+}
+.Select.is-open,
+.Select.is-focused {
+  .Select-control {
+    border-color: #FF6600 !important;
+    box-shadow: none !important;
+  }
+  .Select-menu-outer {
+    border-color: #FF6600 !important;
+    border-top-color: #d9d9d9 !important;
+  }
+}
+
+.modal-close-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.navbar-fixed-bottom,
+.navbar-fixed-top {
+  z-index: 100;
+}
+
+#section-iguana-wallet-settings {
+  > .row {
+    background: #f3f4f5;
+  }
+}

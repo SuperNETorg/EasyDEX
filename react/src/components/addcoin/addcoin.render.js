@@ -7,7 +7,13 @@ const AddCoinRender = function() {
   return (
     <div onKeyDown={ (event) => this.handleKeydown(event) }>
       <div className={ `modal modal-3d-sign add-coin-modal ${this.state.modalClassName}` }>
+        <div
+          onClick={ this.dismiss }
+          className="modal-close-overlay"></div>
         <div className="modal-dialog modal-center modal-lg">
+          <div
+            onClick={ this.dismiss }
+            className="modal-close-overlay"></div>
           <div className="modal-content">
             <div className="modal-header bg-orange-a400 wallet-send-header">
               <button
@@ -53,14 +59,16 @@ const AddCoinRender = function() {
               { mainWindow.arch === 'x64' &&
                 <div className="col-sm-12">
                   <p>
+                    <strong>{ translate('INDEX.SPV_MODE') }:</strong> { translate('ADD_COIN.LITE_MODE_DESC') }.
+                  </p>
+                  <p>
                     <strong>{ translate('INDEX.NATIVE_MODE') }:</strong> { translate('INDEX.NATIVE_MODE_DESC1') }&nbsp;
-                    <strong>Komodo Daemon</strong> { translate('INDEX.NATIVE_MODE_DESC2') }&nbsp;
-                    <i>Iguana Daemon</i> { translate('INDEX.NATIVE_MODE_DESC3') }.
+                    <strong>Komodo Daemon</strong> { translate('INDEX.NATIVE_MODE_DESC2') }.
                   </p>
                   <div className="alert alert-icon alert-primary margin-top-20">
                     <i className="icon md-info-outline"></i>
-                    <strong>{ translate('INDEX.NATIVE_MODE') }</strong> { translate('INDEX.NATIVE_MODE_DESC4') }&nbsp;
-                    <strong>{ translate('INDEX.NATIVE_MODE_DESC5') }</strong>,&nbsp;
+                    <strong>{ translate('INDEX.NATIVE_MODE') }</strong> { translate('INDEX.NATIVE_MODE_DESC3') }&nbsp;
+                    <strong>{ translate('INDEX.NATIVE_MODE_DESC4') }</strong>,&nbsp;
                     <i>{ translate('INDEX.NATIVE_MODE_DESC5') }</i>.
                   </div>
                 </div>
