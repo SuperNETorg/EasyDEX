@@ -199,7 +199,8 @@ class ClaimInterestModal extends React.Component {
       this.props.ActiveCoin.balance.balanceSats,
       this.props.Dashboard.electrumCoins[this.props.ActiveCoin.coin].pub,
       this.props.Dashboard.electrumCoins[this.props.ActiveCoin.coin].pub
-    ).then((res) => {
+    )
+    .then((res) => {
       if (res.msg === 'error') {
         Store.dispatch(
           triggerToaster(
@@ -235,7 +236,8 @@ class ClaimInterestModal extends React.Component {
           this.props.ActiveCoin.balance.balanceSats,
           this.props.Dashboard.electrumCoins[this.props.ActiveCoin.coin].pub,
           this.props.Dashboard.electrumCoins[this.props.ActiveCoin.coin].pub
-        ).then((sendPreflight) => {
+        )
+        .then((sendPreflight) => {
           if (sendPreflight &&
               sendPreflight.msg === 'success') {
             this.setState(Object.assign({}, this.state, {
