@@ -20,7 +20,7 @@ export const getDexCoins = () => {
       console.log(error);
       dispatch(
         triggerToaster(
-          'Error getDexCoins',
+          'getDexCoins',
           'Error',
           'error'
         )
