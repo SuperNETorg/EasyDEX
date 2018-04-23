@@ -1,5 +1,4 @@
-
-    // TODO: clean old placeholders
+// TODO: clean old placeholders
 
 export const LANG_EN = {
   'WALLETS_INFO': {
