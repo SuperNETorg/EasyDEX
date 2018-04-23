@@ -42,9 +42,8 @@ export const getDashboardUpdate = (coin, activeCoinProps) => {
       dispatch(getDashboardUpdateState(json, coin));
 
       // dirty hack to trigger dashboard render
-      if (!activeCoinProps || (activeCoinProps &&
-          !activeCoinProps.balance &&
-          !activeCoinProps.addresses)) {
+      if (!activeCoinProps ||
+          (activeCoinProps && !activeCoinProps.balance && !activeCoinProps.addresses)) {
         setTimeout(() => {
           dispatch(getDashboardUpdateState(json, coin));
         }, 100);
@@ -77,9 +76,16 @@ export const getDashboardUpdateState = (json, coin, fakeResponse) => {
     if (_listtransactions &&
         _listtransactions.error) {
       _listtransactions = null;
-    } else if (_listtransactions && _listtransactions.result && _listtransactions.result.length) {
+    } else if (
+      _listtransactions &&
+      _listtransactions.result &&
+      _listtransactions.result.length
+    ) {
       _listtransactions = _listtransactions.result;
-    } else if (!_listtransactions || (!_listtransactions.result || !_listtransactions.result.length)) {
+    } else if (
+      !_listtransactions ||
+      (!_listtransactions.result || !_listtransactions.result.length)
+    ) {
       _listtransactions = 'no data';
     }
 
