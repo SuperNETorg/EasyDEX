@@ -174,6 +174,10 @@ export const shepherdHerd = (coin, mode, path, startupParams) => {
   } else if (coin === 'EQL') {
     herdData['ac_options'].pop();
     herdData['ac_options'].push('-addnode=46.101.124.153');  
+  } else if (coin === 'GLXT') {
+    herdData['ac_options'].pop();
+    herdData['ac_options'].push('-addnode=34.201.62.8');  
+
 }
 
 

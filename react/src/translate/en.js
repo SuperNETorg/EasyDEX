@@ -830,6 +830,7 @@ export const LANG_EN = {
     'BOTS': 'BOTS (BOTS)',
     'CEAL': 'CEAL NET (CEAL)',
     'COQUI': 'COQUI (COQUI)',
+    'GLXT': 'GLXToken (GLXT)',
     'CRYPTO': 'CRYPTO (CRYPTO)',
     'HODL': 'HODL (HODL)',
     'DEX': 'DEX (DEX)',

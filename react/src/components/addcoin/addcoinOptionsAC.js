@@ -8,6 +8,7 @@ const addCoinOptionsAC = () => {
     'ceal',
     'mesh',
     'coqui',
+    'glxt',
     'eql',
     'crypto',
     'hodl',
