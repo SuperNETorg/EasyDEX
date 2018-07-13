@@ -1,0 +1,72 @@
+.dex {
+    .coinList-coin {
+        padding: 10px;
+    }
+
+    .coinList-coin_icon {
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: transform .4s ease;
+    }
+
+
+    .coinList-coin_icon > * {
+        width: 60px;
+        height: 60px;
+        font-size: 2.1em;
+        transform: rotate(8deg);
+    }
+
+
+    .coinList-coin_balance {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        position: relative;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        transition: transform .4s ease;
+        color: $color-dark
+    }
+
+    .coinList-coin_balance small { color: $color-secondary }
+    .coinList-coin_balance-amount {
+        color: $color-dark;
+        font-size: 13px
+    }
+
+
+    /* context */
+
+    .coinList-coin:hover .coinList-coin_icon {
+        transform:scale(1.05)
+    }
+    .coinList-coin:hover .coinList-coin_balance,
+    .coinList-coin.enabling .coinList-coin_balance {
+        color: #FFF;
+        transform: translateX(2px)
+    }
+
+    .coinList-coin:hover .coinList-coin_balance small,
+    .coinList-coin.enabling  .coinList-coin_balance small,
+    .coinList-coin:hover .coinList-coin_balance-amount,
+    .coinList-coin.enabling .coinList-coin_balance-amount {
+        color: rgba(256,256,256,0.4)
+    }
+
+    .coinList-coin:hover .coinList-coin_action svg {
+        /*fill: #FFF;*/
+        transform: translateX(10px) scale(1.1)
+    }
+
+    /* LOADER */
+
+    .coinList-coin.enabling .coinList-coin_action svg {
+        transform: translateX(100px)
+    }
+}

@@ -1,0 +1,186 @@
+.support-box {
+  padding: 15px 20px;
+  width: 220px;
+  display: inline-block;
+  cursor: pointer;
+
+  &-title {
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 3px;
+  }
+  img {
+    height: 50px;
+  }
+}
+
+.support-box-wrapper {
+  display: inline-block;
+  margin-right: 50px;
+
+  &:last-child, {
+    margin-right: 0;
+  }
+}
+
+.support-box:hover {
+  .support-box-link {
+    color: #5683ad;
+    font-weight: 500;
+  }
+}
+
+.login-settings-modal {
+  #AppUpdate {
+    .col-sm-4 {
+      width: 100%;
+    }
+  }
+  .modal-dialog {
+    width: 80%;
+  }
+  .modal-body {
+    background: #f3f4f5;
+    border-radius: 4px;
+  }
+  .modal-footer {
+    margin-top: 15px;
+  }
+  .page-content {
+    padding-top: 0;
+  }
+  .support-box-wrapper {
+    .support-box {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.settings-help {
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+  left: 10px;
+  color: #5683ad;
+}
+
+#SettingsAccordion {
+  .toggle {
+    position: relative;
+    top: 4px;
+
+    .title {
+      position: relative;
+      top: -12px;
+      left: 12px;
+    }
+  }
+  table {
+    width: 100%;
+
+    td {
+      &:first-child {
+        width: 40%;
+      }
+      &:last-child {
+        width: 60%;
+      }
+    }
+  }
+}
+
+#SettingsAccordion {
+  .panel {
+    .panel-collapse {
+      &.collapse {
+        max-height: 0;
+        overflow: hidden;
+
+      }
+      &.in {
+        animation-name: max-height;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        max-height: none;
+      }
+    }
+  }
+}
+
+#section-iguana-wallet-settings {
+  background: #f3f4f5;
+  height: 100%;
+
+  .panel-title {
+    cursor: pointer;
+    cursor: hand;
+
+    &:before {
+      content: '\F278';
+    }
+    &.collapsed {
+      &:before {
+        content: '\F278';
+      }
+    }
+  }
+  .panel.active {
+    .panel-title:before {
+      content: '\F273';
+    }
+  }
+  .seed-extra-spaces-warning {
+    position: absolute;
+    right: -3px;
+    font-size: 20px;
+    color: rgb(255, 75, 0);
+  }
+}
+
+@keyframes max-height {
+  from {
+    max-height: 0;
+  }
+  99% {
+    max-height: 2000px;
+  }
+  100% {
+    max-height: none;
+  }
+}
+
+.bip39-search,
+.bip39-search input,
+.bip39-search textarea {
+  color: #757575 !important;
+}
+
+.select-settings {
+  max-width: 200px;
+}
+
+.manual-debuglog-refresh {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 20px;
+}
+
+.coind-stdout-refresh-icon {
+  font-size: 20px;
+  margin-top: 7px;
+}
+
+.settings-coind-stdout-textarea {
+  border: none;
+  background-image: none !important;
+}
+
+.app-update-progress {
+  min-height: 200px;
+}
+
+.zcparams-progress {
+  min-height: 140px;
+}

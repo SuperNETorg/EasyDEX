@@ -1,0 +1,60 @@
+.navbar-fixed-bottom,
+.navbar-fixed-top {
+  z-index: 100;
+}
+
+.navbar {
+  &.navbar-fixed-top {
+    .dropdown {
+      &.open {
+        .dropdown-menu {
+          right: 0;
+        }
+      }
+      .dropdown-menu {
+        display: block;
+        right: -165px;
+      }
+    }
+  }
+  .offline {
+    margin-top: 22px;
+
+    .offline-icon {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #f96868;
+      border-radius: 50%;
+      margin-left: 20px;
+    }
+  }
+}
+
+.navbar-nav > li > a.navbar-avatar,
+.navbar-toolbar > li > a.navbar-avatar {
+  &.dropdown-toggle {
+    font-size: 24px;
+    padding-top: 24px;
+
+    i {
+      position: relative;
+      top: -2px;
+    }
+  }
+}
+
+.coind-actions-menu {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+
+.coin-tile-context-menu {
+  top: 45px;
+  left: -34px;
+
+  li {
+    color: #757575;
+  }
+}

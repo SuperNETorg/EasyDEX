@@ -1,0 +1,33 @@
+.wallet-widget-header {
+	background: rgb(135,224,253); /* Old browsers */
+	background: -moz-radial-gradient(top, ellipse cover, rgba(243, 243, 243, 0.86) 0%,rgba(236, 236, 236, 0.49) 40%,rgb(232, 232, 232) 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(top, ellipse cover, rgba(243, 243, 243, 0.86) 0%,rgba(236, 236, 236, 0.49) 40%,rgb(232, 232, 232) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at top, rgba(243, 243, 243, 0.86) 0%,rgba(236, 236, 236, 0.49) 40%,rgb(232, 232, 232) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=1 );
+	-webkit-box-shadow:0 -4px 27px 0px rgba(0,0,0,0.09);
+	box-shadow: 0 -4px 27px 0px rgba(0,0,0,0.09);
+}
+
+.wallet-send-header {
+	background: rgb(135,224,253); /* Old browsers */
+	background: -moz-radial-gradient(top, ellipse cover, rgba(255, 134, 74, 0.86) 0%,rgba(218, 117, 67, 0.5) 40%,rgb(255, 61, 32) 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(top, ellipse cover, rgba(255, 134, 74, 0.86) 0%,rgba(218, 117, 67, 0.5) 40%,rgb(255, 61, 32) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at top, rgba(255, 134, 74, 0.86) 0%,rgba(218, 117, 67, 0.5) 40%,rgb(255, 61, 32) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff702a', endColorstr='#ff3d20',GradientType=1 );
+	-webkit-box-shadow:0 -4px 27px 0px rgba(0,0,0,0.09);
+	box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.32);
+}
+
+.kmd-wallet-header {
+	background: url('/assets/images/bg/kmd_transparent_header_bg.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: 0% !important;
+}
+
+#edex-footer {
+	padding: 0 !important;
+}
+
+.header-easydex {
+	z-index: 99;
+}

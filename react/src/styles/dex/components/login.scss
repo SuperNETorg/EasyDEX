@@ -1,0 +1,123 @@
+.dex {
+    .login {
+        height: 100vh
+    }
+
+    .login,
+    .login .form {
+        display: flex;
+        overflow: auto;
+        align-items: center;
+        justify-content: center;
+        background: $background-jaguar;
+    }
+
+    .login-localStorage .form {
+        display: none
+    }
+
+    .login-newpassphrase {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-decoration: underline;
+    }
+
+    .login-passphrase-notice {
+        background: $danger;
+        color: #FFF;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: left;
+        height: 90px;
+        padding: 0 20px;
+
+    }
+
+    .login-passphrase-notice span { font-weight: 400 }
+
+    .login .form {
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+
+    .login-button {
+        width: 100%;
+        height: 90px;
+        padding: 0 20px;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .login footer {
+        margin-top: 10px;
+        opacity: .5;
+        text-transform: uppercase;
+    }
+
+    .login textarea {
+        margin-top: 10px;
+        padding: 10px 10px;
+        margin-bottom: 20px;
+        min-width: inherit;
+        width: 360px;
+        height: 180px;
+        resize: none;
+    }
+
+
+    .login-passphrase-notice,
+    .login-button {
+        width: 100%
+    }
+
+
+    .Placeholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 1000;
+        pointer-events: none;
+
+    }
+
+    .Placeholder-logo {
+        @extend .flexCenter;
+        overflow: hidden;
+    }
+
+    .Placeholder-logo,
+    .Placeholder-logo svg {
+        display: inline-block;
+        width: 260px;
+        height: 220px;
+    }
+
+    .Placeholder-logo svg {
+        transform: scale(3);
+        transform-origin: 55% 85%;
+        pointer-events: none
+
+    }
+
+
+    .Placeholder-tagline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+
+    }
+
+    .Placeholder-text {
+        font-weight: 200;
+        font-size: 3.2em;
+        color: $color-dark;
+        margin: 0 0 20px 0;
+
+    }
+}

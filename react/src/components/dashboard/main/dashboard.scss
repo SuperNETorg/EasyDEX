@@ -1,0 +1,178 @@
+.full-height {
+  height: 100%;
+}
+
+.text {
+  &-align-center {
+    text-align: center;
+  }
+  &-align-left {
+    text-align: left;
+  }
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+//  jumblr.js
+.jumblr-header {
+  font-size: 24px;
+  text-align: center;
+}
+
+//  loginModal.js
+.color-white {
+  color: #fff;
+}
+
+// navbar.js
+.navbar-toolbar {
+  > li {
+    > a {
+      &.padding-top-16 {
+        padding-top: 16px;
+      }
+    }
+  }
+}
+
+// notifications.js
+.modal-body-container {
+  height: 590px;
+}
+
+.panel-body-container {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+// sendCoin.js
+.vertical-padding-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.horizontal-padding-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.confirm-currency-send-container {
+  color: #f44336;
+}
+
+// settings.js
+.wallet-info-key {
+  font-weight: bold;
+}
+
+.width-5-percent {
+  width: 5%;
+}
+
+// walletsBalance.js
+.font {
+  &-weight-600 {
+    font-weight: 600;
+  }
+  &-size-22 {
+    font-size: 22px;
+  }
+  &-size-80-percent {
+    font-size: 80%;
+  }
+}
+
+// walletBasiliskConnection.js
+.wallet-send-header {
+  border-radius: 3px 3px 0 0;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+// walletsData.js
+.z-index-10 {
+  z-index: 10;
+}
+
+// walletsHeader.js
+.z-index-1 {
+  z-index: 1;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.pagination-container {
+  padding: 20px 0 10px 0;
+}
+
+// walletsNative.js
+.background-color-white {
+  background-color: #fff;
+}
+
+.easydex-section-image {
+  font-size: 35px;
+  vertical-align: middle;
+}
+
+// walletsNativeSyncProgress.js
+.sync-progress-container {
+  margin: -20px 0px 10px 0px;
+}
+
+// walletsNativeTxInfo.js
+.height-170 {
+  height: 170px;
+}
+
+.rt-tr.-odd div,
+.rt-tr.-even div {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.rt-tr-group.-odd .-padRow {
+  display: none;
+}
+
+.ReactTable .rt-tfoot .rt-td {
+  text-align: center;
+}
+
+.ReactTable .rt-thead .rt-th.-sort-asc,
+.ReactTable .rt-thead .rt-td.-sort-asc,
+.ReactTable .rt-thead .rt-th.-sort-desc,
+.ReactTable .rt-thead .rt-td.-sort-desc{
+  box-shadow: none;
+}
+
+.ReactTable .rt-thead .rt-th.-sort-asc div:nth-child(1):after {
+  font-family: FontAwesome;
+  padding-left: 5px;
+  content: "\f106";
+}
+.ReactTable .rt-thead .rt-th.-sort-desc div:nth-child(1):after {
+  font-family: FontAwesome;
+  padding-left: 5px;
+  content: "\f107";
+}
+
+.rt-tr.-padRow {
+  display: none;
+}
+
+.ReactTable .-pagination,
+.ReactTable .rt-thead.-header,
+.ReactTable .rt-tfoot{
+  box-shadow: none;
+}

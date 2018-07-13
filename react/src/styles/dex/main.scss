@@ -1,0 +1,88 @@
+/*
+  main styling
+*/
+
+/* Imports */
+
+@import '_variables.scss';
+@import '_helpers.scss';
+@import '_animations.scss';
+@import '_base.scss';
+
+@import 'elements/_window-controls.scss';
+@import 'elements/_window-header.scss';
+@import 'elements/_window-footer.scss';
+@import 'elements/_link.scss';
+@import 'elements/_loader.scss';
+@import 'elements/_notifier.scss';
+@import 'elements/_inputs.scss';
+@import 'elements/_buttons.scss';
+@import 'elements/_list.scss';
+@import 'elements/_forms.scss';
+@import 'elements/_progress.scss';
+@import 'elements/_tooltip.scss';
+@import 'elements/_modal.scss';
+@import 'elements/_tables.scss';
+@import 'elements/_header.scss';
+@import 'elements/_growler.scss';
+
+@import 'components/dashboard.scss';
+@import 'components/trade.scss';
+@import 'components/login.scss';
+@import 'components/coinList.scss';
+@import 'components/wallet.scss';
+@import 'components/balance.scss';
+@import 'components/orders.scss';
+
+.dex {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+
+  transition: all .2s ease;
+  color: $color-primary;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  * { box-sizing: border-box }
+
+  .content-container {
+      display: flex;
+      width: 100vw;
+      max-height: 100vh;
+  }
+
+  .app.content-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: $background-app;
+  }
+
+  .app.content-container .Placeholder { flex: 1 }
+  .app.content-container .app-view {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      pointer-events: none;
+  }
+
+  .app.content-container .app-view > *:not(.notifier) {
+      display: flex;
+      width: 100%;
+      pointer-events: all;
+      overflow: auto;
+  }
+
+
+  .app.content-container .window-footer { z-index: 0 }
+
+  /* states */
+  .app.recording.content-container,
+  .app.playing.content-container  { justify-content: flex-end }
+
+  .app:not(.recording) .player-container { display: none }
+}

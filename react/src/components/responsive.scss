@@ -1,0 +1,21 @@
+@media only screen and (min-width : 1201px) {
+  .wallet-widgets {
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    > div {
+      display: flex;
+
+      .widget,
+      .widget-content {
+        height: 100%;
+
+        > div,
+        .clearfix {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

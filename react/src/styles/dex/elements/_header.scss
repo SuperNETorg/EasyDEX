@@ -1,0 +1,64 @@
+.dex {
+    .component-header {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: $background-app;
+        color: $color-dark;
+        width: 100%
+    }
+
+    .wallet-wallets-header-back {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+    }
+
+    .wallet-wallets-header-back i,
+    .wallet-wallets-header-back i svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .wallet-wallets-header-back i svg {
+        transform: rotate(-180deg) !important;
+    }
+
+    .component-header h2 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        font-size: 1.6em;
+        font-weight: 600
+    }
+
+    .component-header-withBack {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .component-header-centered h2 {
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .component-header h2 small {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: .5em;
+        color: $color-secondary;
+        padding-top: 4px;
+        font-weight: 400;
+        margin-top: -4px;
+    }
+}

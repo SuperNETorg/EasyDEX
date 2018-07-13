@@ -1,0 +1,51 @@
+/*
+  Styling Variables ✏️
+  ----
+  - Stylesheet Partial, for inclusion where common variables are needed
+  - If a window needs to overwrite variables, it should be done in that window's stylesheet
+*/
+
+/* Colors */
+$blue: #8A0EFB;
+$blue-dark: #2D91FC;
+$danger: #F33C3C;
+
+
+$grey-lighter: #D7D7D7;
+$grey-light: #919191;
+$grey: rgba(0,0,0,0.1);
+$grey-dark: #2D2D2D;
+$grey-darker: #1A1A20;
+
+
+$red: #FF6159;
+$green: #05E6B5;
+$purple: #783FEA;
+$orange: orange;
+
+/* Typography */
+$font-size-default:    1em;
+
+/* Backgrounds */
+$background-primary:   #1B1D23;
+$background-jaguar:    #1B1D23;
+$background-light:     #3A3D3F;
+$background-dark:      #1B1D23;
+$background-app:       #282C34;
+
+/* Typography */
+$color-primary:        #FFF;
+$color-secondary:      #959CAE;
+$color-dark:           #FFF;
+$divider-color:        $grey-dark;
+
+$box-shadow-inputs:    0 1px 1px 0 rgba(0, 0, 0, .2),
+                       0 0 0 1px rgba(0, 0, 0, .1),
+                       0 12px 24px 0 rgba(0,0,0, 0.05);
+
+/* Borders */
+$window-border-radius: 5px;
+
+/* height */
+$footer-height: 100px;
+$action-size: 110px;

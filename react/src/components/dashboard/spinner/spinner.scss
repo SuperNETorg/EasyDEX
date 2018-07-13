@@ -1,0 +1,135 @@
+.loader {
+  float: right;
+  width: 18px;
+  height: 18px;
+  position: relative;
+
+  .circle {
+    animation: rotate 2s linear infinite;
+    height: 100px;
+    position: relative;
+    width: 100px;
+  }
+
+  .path {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+    animation: dash 1.5s ease-in-out infinite;
+    stroke: #FFB8A2;
+    stroke-linecap: round;
+  }
+
+  .path2 {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+    animation: dash2 1.5s ease-in-out infinite;
+    stroke: #FF9372;
+    stroke-linecap: round;
+  }
+
+  .path3 {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+    animation: dash3 1.5s ease-in-out infinite;
+    stroke: #FF7C53;
+    stroke-linecap: round;
+  }
+
+  .path4 {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+    animation: dash4 1.5s ease-in-out infinite;
+    stroke: #FE450D;
+    stroke-linecap: round;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124;
+  }
+}
+@keyframes dash2 {
+  0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -50;
+  }
+  100% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124;
+  }
+}
+@keyframes dash3 {
+  0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -75;
+  }
+  100% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124;
+  }
+}
+@keyframes dash4 {
+  0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124;
+  }
+}
+@keyframes color {
+  100%, 0% {
+    stroke: #FF8D6A;
+  }
+  40% {
+    stroke: #FE450D;
+  }
+  66% {
+    stroke: #FF683A;
+  }
+  80%, 90% {
+    stroke: #FF7D56;
+  }
+}
+
+.spinner--small {
+  position: absolute;
+  right: 18px;
+  top: -15px;
+  transform: scale(0.4);
+}
+
+.spinner--medium {
+  position: absolute;
+  right: 38px;
+  top: 0;
+  transform: scale(0.5);
+}

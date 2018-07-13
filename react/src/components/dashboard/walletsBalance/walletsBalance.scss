@@ -1,0 +1,24 @@
+.col-lg-12 {
+  &.col-xs-12 {
+    &.balance-placeholder--bold {
+      .icon {
+        &.fa-eye {
+          position: relative;
+          top: -2px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.balance-placeholder--bold {
+  .pull-left {
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 16px !important;
+  }
+  .padding-right-30 {
+    padding-right: 10px !important;
+  }
+}

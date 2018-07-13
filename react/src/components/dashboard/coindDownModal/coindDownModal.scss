@@ -1,0 +1,25 @@
+.coind-down-modal {
+  .modal-body {
+    height: 60vh;
+
+    > div {
+      height: 100%;
+    }
+    .form-group {
+      &.form-material {
+        &.floating {
+          height: 80%;
+          max-height: calc(100% - 100px);
+        }
+      }
+    }
+    .page-content {
+      width: 90%;
+      height: 100%;
+
+      textarea {
+        height: 100%;
+      }
+    }
+  }
+}

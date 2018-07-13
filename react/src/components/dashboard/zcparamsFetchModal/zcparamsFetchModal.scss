@@ -1,0 +1,25 @@
+.zcparams-fetch-modal {
+  .modal-body {
+    height: 400px;
+
+    > div {
+      height: 100%;
+    }
+    .page-content {
+      width: 90%;
+      height: 100%;
+    }
+    .center {
+      .col-sm-6 {
+        margin: 0 auto;
+        float: none;
+      }
+    }
+  }
+}
+
+.page-login {
+  .zcparams-fetch-modal {
+    color: #757575;
+  }
+}

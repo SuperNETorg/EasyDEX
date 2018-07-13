@@ -1,0 +1,283 @@
+.full-opacity {
+  opacity: 1;
+}
+
+.display-block {
+  display: block;
+}
+
+.swal2-modal-container {
+  display: block;
+  width: 500px;
+  padding: 20px;
+  margin-left: -250px;
+  background: rgb(255, 255, 255);
+  margin-top: -230px;
+}
+
+button {
+  &.copy-floating-label {
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    top: -26px;
+    right: 0;
+    background-color: #757575;
+    border: 0;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  &.swal2-confirm-container {
+    background-color: rgb(48, 133, 214);
+    border-left-color: rgb(48, 133, 214);
+    border-right-color: rgb(48, 133, 214);
+  }
+  &.swal2-cancel-container {
+    display: inline-block;
+    background-color: rgb(221, 51, 51);
+  }
+}
+
+.vertical-padding-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.horizontal-padding-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.browser-usage-container {
+  color: #424242;
+}
+
+.width-540 {
+  width: 540px;
+}
+
+.vertical-margin-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+textarea {
+  &.height-100 {
+    height: 100px;
+  }
+}
+
+.seed-type-block {
+  position: absolute;
+  left: 100%;
+  min-width: 50px;
+
+  .placeholder-label {
+    border-radius: 4px;
+    padding: 3px;
+    background: #61BD4F;
+    color: #fff;
+  }
+}
+
+#loginPassphrase,
+#wifkeysPassphraseTextarea,
+input[type='password'] {
+  width: calc(100% - 35px);
+}
+#wifkeysPassphraseTextarea,
+#loginPassphrase {
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.seed-tooltip {
+  .tooltiptext {
+    width: 230px;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent black transparent transparent;
+    }
+  }
+}
+
+.auto-side-margin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.register-form {
+  .floating-label {
+    font-size: 13px;
+  }
+}
+
+.login-settings-dropdown {
+  font-size: 16px;
+
+  .dropdown-menu {
+    left: 42%;
+    top: inherit;
+  }
+}
+
+.login-settings-dropdown-trigger {
+  cursor: pointer;
+}
+
+.login-settings-modal {
+  .modal-body {
+    overflow-y: scroll;
+    color: #757575;
+  }
+  .panel-title {
+    color: #757575;
+  }
+  a {
+    color: #fb8c00;
+  }
+}
+
+option.login-option {
+  background-color: #757575;
+  color: #fff;
+}
+
+.login-form,
+.register-form {
+  width: 540px;
+  margin: 30px 0;
+}
+
+.form-material {
+  .form-control.focus~.floating-label,
+  .form-control:focus~.floating-label,
+  .form-control:not(.empty)~.floating-label {
+    top: -14px;
+  }
+}
+
+.pin-block-one {
+  width: 10%;
+  float: left;
+  margin-left: 38%;
+}
+.pin-block-two {
+  width: 4%;
+  float: left;
+  margin-top: 10px;
+}
+.pin-block-three {
+  width: 10%;
+  float: left;
+}
+
+.page-login {
+  .seed-extra-spaces-warning {
+    position: absolute;
+    right: -30px;
+    margin-top: 40px;
+    font-size: 20px;
+    color: rgb(255, 75, 0);
+  }
+  .addcoin-shortcut {
+    display: inline-block;
+    width: 46%;
+
+    &:last-child {
+      margin-left: 8%;
+    }
+    > div {
+      margin-bottom: 10px;
+    }
+  }
+  .line {
+    padding: 60px 0 40px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 1px;
+      width: 33%;
+      background: #ccc;
+      margin-right: 10px;
+      position: relative;
+      top: -4px;
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 1px;
+      width: 33%;
+      background: #ccc;
+      margin-left: 10px;
+      position: relative;
+      top: -4px;
+    }
+  }
+  .login-help {
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+    left: 15px;
+    color: #fff;
+  }
+}
+
+.qrcode-modal + .modal {
+  a {
+    color: #fff;
+  }
+}
+
+.btn-generate-qr {
+  .qrcode-modal {
+    display: block;
+  }
+}
+
+.qr-modal-login-block {
+  position: absolute;
+  right: 0;
+  top: -50px;
+
+  .btn {
+    background: transparent;
+    color: #fff;
+  }
+}
+
+a.login-nn-elections {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  border-radius: 4px;
+  border: solid 1px #fff;
+  font-size: 18px;
+  padding: 8px 10px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,51 @@
+.modal-claim-interest {
+  .modal-dialog {
+    width: 70%;
+
+    .table > tbody > tr > td,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > td,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
+    .table > thead > tr > th {
+      padding: 8px 30px 8px 0;
+    }
+
+    .claim-btn {
+      float: right;
+      margin-bottom: 30px;
+    }
+    .table-scroll {
+      max-height: 366px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      width: 100%;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    .green {
+      color: #66bb6a;
+    }
+    .red {
+      color: #f96868;
+    }
+    .locktime {
+      i {
+        font-size: 20px;
+        line-height: 1.1;
+      }
+    }
+
+    .refresh-icon {
+      position: absolute;
+      right: 20px;
+      font-size: 20px;
+      z-index: 100;
+    }
+
+    .bootstrap-select {
+      max-width: 400px;
+    }
+  }
+}

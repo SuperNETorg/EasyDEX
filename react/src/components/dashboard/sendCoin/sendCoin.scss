@@ -1,0 +1,51 @@
+.send-coin-sync-warning {
+  .icon {
+    font-size: 18px;
+  }
+  .desc {
+    position: relative;
+    top: -2px;
+  }
+}
+
+.btn-send-self {
+  position: absolute;
+  right: 16px;
+  top: 20px;
+  padding: 0 11px;
+}
+
+.extcoin-send-form {
+  .send-target-block {
+    margin-bottom: 14px;
+    margin-top: 10px;
+  }
+
+  .rc-slider {
+    left: 4px;
+
+    &.send-slider-time-based {
+      .rc-slider-mark {
+        margin-top: 3px;
+
+        .rc-slider-mark-text:first-child {
+          left: 8px !important;
+        }
+        .rc-slider-mark-text:last-child {
+          left: calc(100% - 20px) !important;
+        }
+      }
+    }
+  }
+}
+
+.coin-send-form {
+  overflow: hidden;
+
+  .settings-help {
+    &.send-btc {
+      margin: 0 7px 0 5px;
+      left: inherit;
+    }
+  }
+}

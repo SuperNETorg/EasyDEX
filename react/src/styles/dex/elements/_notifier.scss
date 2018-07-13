@@ -1,0 +1,112 @@
+@import '../_variables.scss';
+
+/*
+  Notifier Styling Component ✏️
+
+*/
+.dex {
+    .notifier {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        min-height: 100vh;
+        padding: 5vh 20px;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 2000;
+    }
+
+    .notifier-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .notifier-title-icon {
+        opacity: .05;
+        position: absolute;
+        transform: scale(10) translateY(-10px);
+        pointer-events: none;
+
+    }
+
+    .notifier-title-icon svg {
+        width: 200px;
+        height: 150px;
+    }
+
+    .notifier-title-text {
+        font-size: 2.4em;
+        font-weight: 200;
+        margin: 0 0 .5em 0;
+    }
+
+    .notifier button {
+        pointer-events: all;
+    }
+
+    .notifier-items {
+        @extend .flexColumnCenter;
+        flex-shrink: 0;
+        items-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .notifier-items li {
+        flex-shrink: 0;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .notifier-close {
+        width: 200px;
+        background: #04050A;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .notifier-appversion {
+        opacity: .5;
+        text-transform: uppercase;
+
+    }
+
+
+    /* animation state */
+    .notifier {
+        position: fixed;
+        top: -100vh;
+        transition: all .32s ease-in-out;
+        will-change: all;
+        overflow: hidden;
+    }
+    .notifier.notifier-error {
+        top: 0;
+        background: $danger;
+        box-shadow: 0px 0px 100px 100px $danger;
+        color: #FFF
+    }
+
+    .notifier.notifier-error:before {
+        position: absolute;
+        content:"";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: $danger;
+        opacity: .8;
+        z-index: -1;
+    }
+}

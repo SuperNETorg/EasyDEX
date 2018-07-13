@@ -1,0 +1,62 @@
+.breadcrumb {
+  padding: 8px 30px 0;
+  position: relative;
+  top: -10px;
+}
+
+.header-easydex-section {
+  img {
+    max-width: 60px;
+  }
+}
+
+.coin-logo-wide {
+  padding: 8px 30px 0;
+  position: relative;
+  top: 0;
+
+  .header-easydex-section {
+    img {
+      width: inherit;
+      max-width: inherit;
+      position: relative;
+      top: -5px;
+    }
+  }
+
+  &.native-coin-logo {
+    top: -93px;
+
+    .header-easydex-section {
+      img {
+        width: inherit;
+      }
+    }
+  }
+}
+
+.native-coin-logo {
+  float: left;
+  position: absolute;
+  top: -105px;
+  z-index: 100;
+
+  .header-easydex-section {
+    img {
+      width: 60px;
+      max-height: 60px;
+    }
+  }
+}
+
+.page-header--native {
+  height: 75px;
+}
+
+.page-header--spv {
+  height: 120px;
+
+  .page-header-actions {
+    top: 73%;
+  }
+}

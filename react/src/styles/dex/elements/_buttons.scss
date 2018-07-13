@@ -1,0 +1,241 @@
+@import '../_variables.scss';
+
+/*
+  Input Styling Component ✏️
+  ----
+  - Stylesheet Partial, for inclusion where inputs are used
+  - Any extensions to input styling should go in this file
+*/
+
+.dex {
+    button {
+        font: inherit;
+        outline: none;
+        background: transparent;
+        border: none;
+        color: inherit;
+        padding: 0;
+        cursor: pointer;
+        transition: all .2s ease;
+        border-radius: 4px;
+        will-change: transform;
+        word-break: break-word;
+    }
+
+    button.lefttext {
+        text-align: left;
+    }
+
+    button.transparent {
+        background: transparent
+    }
+
+    button[disabled] {
+        pointer-events: none;
+        cursor: default;
+    }
+
+
+
+    button.withBorder {
+        position: relative;
+        text-transform: uppercase;
+        box-shadow: $box-shadow-inputs;
+    }
+
+
+    button.link {
+        border-bottom: 1px solid $blue;
+        border-radius: 0;
+    }
+
+    button.link:hover {
+        border-bottom-color: transparent;
+        color: $blue
+    }
+
+
+
+    .Clipboard,
+    .Openexternal {
+        display: flex;
+        align-items: center;
+        font-size: .8em;
+    }
+
+
+    .Openexternal-icon { margin-right: 5px }
+
+
+    .action,
+    .action i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        transition: all .2s ease;
+    }
+
+    .action {
+        padding: 10px 10px 10px 20px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    .action.onlyIcon {
+        padding: 10px;
+    }
+
+    .action.onlyIcon i {
+        padding: 0 !important;
+        background: transparent !important;
+    }
+
+    .action.onlyIcon i svg {
+        transform: scale(1.6);
+    }
+
+
+    .action:not(.normaltext) {
+        text-transform: uppercase;
+    }
+
+    .action.normaltext {
+        padding: 0
+    }
+
+    .action > span {
+        position: relative;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    .action.centered span {
+        right: -16px;
+        justify-content: center;
+    }
+
+    .action > i {
+        margin-left: 8px;
+        padding: 6px;
+        border-radius: 4px
+    }
+
+    .action.onlyIcon > i { margin: 0 }
+
+    .action > i svg {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .action:hover {
+        box-shadow: 0 12px 40px rgba(0,0,0,0.01)
+    }
+
+    .action:not(.noTransformTranslate):hover {
+        transform: translateY(-2px);
+    }
+
+    .action:hover > i {
+        background: $color-dark;
+        transform:scale(1.1);
+        box-shadow: 0 6px 20px rgba(0,0,0,.14);
+    }
+
+    .action:hover > i svg { fill: #FFF }
+
+    /* primary */
+
+    .action.primary {
+        background: $blue;
+        color: #FFF;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.2)
+    }
+    .action.primary i svg { fill: #FFF }
+
+    .action.primary > i { background-color: rgba(0,0,0,0.2) }
+    .action.primary > span { font-weight: 600; }
+    .action.primary:hover > i { background: #000 }
+
+
+    /* danger */
+
+    .action.danger {
+        background: $danger;
+        color: #FFF;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.1)
+    }
+
+    .action.danger.green { background: $green }
+    .action.danger.orange { background: $orange }
+
+    .action.danger i svg { fill: #FFF }
+
+    .action.danger > i { background-color: rgba(0,0,0,0.2) }
+    .action.danger > span { font-weight: 600; }
+    .action.danger:hover > i { background: #000 }
+
+    /* dark */
+
+    .action.dark {
+        background-color: transparent;
+        color: #FFF;
+        box-shadow: none
+    }
+    .action.dark:hover {
+        opacity: 1
+    }
+    .action.dark > i {
+        background: #000
+    }
+    .action.dark > i svg { fill: #FFF }
+
+
+    /* right */
+    .action.primary.right {
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    .action.primary.right > i {
+        margin-left: 0;
+        margin-right: 8px
+    }
+
+    .action[disabled] {
+        background-color: rgba(0,0,0,0.2) !important;
+        color: rgba(256,256,256,0.42);
+        box-shadow: none
+    }
+
+    /* small */
+
+    .action.small {
+        padding: 4px 4px 4px 8px;
+    }
+
+    /* arrow down */
+    .action.arrow-down > i {
+        transform: rotate(90deg);
+        background: rgba(256,256,256,0.1)
+    }
+
+    .action.arrow-down > i svg {
+        fill: #FFF
+    }
+
+    .action.arrow-down:hover > i {
+        background: rgba(256,256,256,0.2)
+    }
+
+    /* danger */
+    .action.danger {
+        background-color: $danger
+    }
+
+
+    .action.loading > i {
+        opacity: 0
+    }
+}

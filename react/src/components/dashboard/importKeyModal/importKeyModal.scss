@@ -1,0 +1,42 @@
+.modal-import-key {
+  .modal-dialog {
+    width: 70%;
+  }
+  .modal-body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(90vh - 80px);
+  }
+  .line {
+    padding: 50px 0 40px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 1px;
+      width: 47%;
+      background: #ccc;
+      margin-right: 10px;
+      position: relative;
+      top: -4px;
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 1px;
+      width: 47%;
+      background: #ccc;
+      margin-left: 10px;
+      position: relative;
+      top: -4px;
+    }
+  }
+  .seed-extra-spaces-warning {
+    position: absolute;
+    right: -3px;
+    font-size: 20px;
+    color: rgb(255, 75, 0);
+  }
+}

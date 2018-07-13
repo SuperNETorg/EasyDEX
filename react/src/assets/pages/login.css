@@ -1,0 +1,63 @@
+.page-login:before {
+  /*background-image: url("../images/WallStreetNY.jpg");*/
+}
+.page-login form {
+  width: 540px;
+  margin: 30px 0;
+}
+.page-login form a {
+  margin-left: 20px;
+}
+.page-login .form-control,
+.page-login .floating-label,
+.page-login .form-control:focus + .floating-label {
+  color: #bdbdbd;
+}
+.page-login #addcoin_select_coin_mdl_options-login {
+  color: #757575;
+}
+.page-login a {
+  color: #9fa8da;
+}
+
+.style-addcoin-lbl-mdl-login > label,
+.style-addcoin-lbl-mdl > label {
+  margin: auto;
+}
+
+#register-btn, #register-back-btn,
+#logint-another-wallet {
+  border: 1px solid #5d5d5d;
+  color: #fff;
+}
+
+#register-btn:hover,
+#register-back-btn:hover,
+#logint-another-wallet:hover {
+  border: 1px solid #a7a7a7;
+  color: #fff;
+}
+
+.page-register a {
+  color: #9fa8da;
+}
+.page-register form {
+  width: 340px;
+  margin: 22px auto;
+}
+.page-register .form-control,
+.page-register .floating-label,
+.page-register .form-control:focus + .floating-label {
+  color: #bdbdbd;
+}
+
+@media (max-width: 767px) {
+  .page-login form {
+    width: auto;
+  }
+}
+@media (max-width: 480px) {
+  .page-register form {
+    width: auto;
+  }
+}

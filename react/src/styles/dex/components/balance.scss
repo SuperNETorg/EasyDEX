@@ -1,0 +1,118 @@
+.dex {
+    .balance-action {
+        background: $background-dark
+    }
+
+    .balance-qr {
+        display: flex;
+    }
+
+    .balance-deposit { padding: 20px 20px 0px }
+
+    .deposit-withdraw { padding: 0px 20px  20px }
+
+    .balance-deposit canvas {
+        padding: 4px;
+        border-radius: 4px;
+        background: #FFF;
+    }
+
+    .balance-deposit-address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        overflow: hidden;
+        padding: 10px 10px 30px;
+    }
+
+    .balance-deposit-body {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .balance-deposit-address button {
+        overflow-wrap: break-word;
+        width: 100%;
+        padding: 4 10px;
+        justify-content: space-between;
+        min-height: 54px;
+    }
+
+    .balance-deposit-address button span {
+        display: inline-block;
+        overflow-wrap: break-word;
+        width: calc(100% - 80px);
+        text-align: left;
+        font-size: .8em;
+
+    }
+
+    .deposit-withdrawConfirm,
+    .deposit-tx {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .deposit-withdrawConfirm h3,
+    .deposit-tx h3 {
+        color: $color-dark;
+        margin-bottom: 40px;
+    }
+
+    .deposit-withdrawConfirm ul {
+        list-style: none;
+        margin: 0;
+        padding: 0
+    }
+
+    .deposit-withdrawConfirm ul li {
+        display: flex
+    }
+
+    .deposit-withdrawConfirm ul li strong {
+        padding-right: 20px;
+        text-align: right;
+        font-weight: 400;
+        color: $color-dark;
+    }
+
+    .deposit-withdrawConfirm ul li strong:after {
+        content: ' :'
+    }
+
+    .deposit-withdrawConfirm-actions,
+    .deposit-tx-actions {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .deposit-withdrawConfirm-actions button:first-of-type {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .deposit-withdrawConfirm-actions button:last-of-type {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .deposit-withdrawConfirm button {
+        margin-top: 20px;
+    }
+
+    .deposit-withdrawConfirm button.primary {
+        padding: 20px;
+    }
+
+    .balance-showtx .balance-deposit,
+    .balance-showtx .trade-button-wrapper,
+    .balance-showtx .trade-amount_input_address,
+    .balance-showtx .trade-amount_input_amount {
+        display: none;
+    }
+}

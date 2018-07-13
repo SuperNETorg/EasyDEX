@@ -1,0 +1,161 @@
+@import '_variables.scss';
+
+/* hebrew */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Heebo Light'), local('Heebo-Light'), url('/assets/dex/fonts/3QgtgpUS0mVHLw8zEnTGBhTbgVql8nDJpwnrE27mub0.woff2') format('woff2');
+  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* latin */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Heebo Light'), local('Heebo-Light'), url('/assets/dex/fonts/PBgOuZgb7GIoq5WdJf9cYPesZW2xOQ-xsNqO47m55DA.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Heebo'), local('Heebo-Regular'), url('/assets/dex/fonts/q17xXvwvpCd8fBgEBABP9w.woff2') format('woff2');
+  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* latin */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Heebo'), local('Heebo-Regular'), url('/assets/dex/fonts/Q66imbW5v9YuQMRLd0RXOA.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Heebo Medium'), local('Heebo-Medium'), url('/assets/dex/fonts/swuLRBhLR9p1N4Bt8XT6DBTbgVql8nDJpwnrE27mub0.woff2') format('woff2');
+  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* latin */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Heebo Medium'), local('Heebo-Medium'), url('/assets/dex/fonts/vd_gpifGyUkVAMtANh8LkvesZW2xOQ-xsNqO47m55DA.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Heebo Bold'), local('Heebo-Bold'), url('/assets/dex/fonts/NoTh4R7V5EDCexceot5ophTbgVql8nDJpwnrE27mub0.woff2') format('woff2');
+  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* latin */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Heebo Bold'), local('Heebo-Bold'), url('/assets/dex/fonts/ci1Z5c9lWkHY3RNZSMtWUfesZW2xOQ-xsNqO47m55DA.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* Set base colour and font stack */
+.dex {
+  font-family: 'Heebo', sans-serif !important;
+  overflow: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 16px;
+  margin: 0;
+
+  * {
+    font-family: 'Heebo', sans-serif !important;
+  }
+
+  .container {
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .row {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  .col {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .grayed {
+    filter: grayscale(100%);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .dashboard-wallets-list {
+    .coinList-coin {
+      width: calc(33% - 20px);
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 40px;
+
+      img {
+        position: relative;
+        top: 4px;
+        left: 5px;
+        max-height: 58px;
+        max-width: 50px;
+        opacity: 0.9;
+        border-radius: 50%;
+      }
+      .coinList-coin_balance-name {
+        text-transform: capitalize;
+      }
+      &:hover {
+        img {
+          opacity: 1;
+        }
+      }
+    }
+    .add-new-coin {
+      i {
+        width: 30px;
+        height: 30px;
+        transform: rotate(0deg);
+        border-radius: 50%;
+        background: #fff;
+      }
+    }
+  }
+
+  .prices {
+    .coin-icon-svg {
+      img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+      }
+    }
+    .orders-item-wrapper {
+      width: 100%;
+      max-width: 600px;
+    }
+  }
+}

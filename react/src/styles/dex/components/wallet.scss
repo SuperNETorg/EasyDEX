@@ -1,0 +1,123 @@
+.dex {
+    .wallet-wrapper {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .wallet-orderbooks {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        height: 100vh;
+        background: #000;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        overflow: auto;
+
+    }
+
+    .wallet-orderbooks-chart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+    }
+
+    .wallet-orderbooks-chart h3 {
+        font-weight: 200;
+        opacity: .2
+    }
+
+    .wallet {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        background: $background-dark;
+        height: 100vh;
+        min-width: 380px;
+        transition: all .2s ease;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
+    .wallet-icon {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        box-shadow: $box-shadow-inputs;
+        transform: rotate(10deg);
+        overflow: hidden;
+    }
+
+
+    .wallet-icon > * {
+        width: 100px;
+        height: 100px;
+    }
+
+    .wallet-icon i {
+        font-size: 2.3em;
+    }
+
+    .wallet-wallets-header {
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: all .2s ease;
+        transform: translateY(0);
+        background: $background-app;
+        height: 230px;
+    }
+
+
+    .wallet-balance,
+    .wallet-coinName {
+        color: $color-dark;
+    }
+
+
+    .wallet-balance {
+        color: $color-dark;
+        font-weight: 400;
+        font-size: .6em;
+    }
+
+    .wallet-balance { margin-bottom: 4px }
+
+    .wallet-trade {
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    .wallet-exchange {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        flex-grow: 1
+    }
+
+
+    .wallet-trade-buy {
+        margin-top: auto
+    }
+
+    /* context */
+
+
+    /* .wallet:not(.wallet-ready) .wallet-wallets-header { transform: translateY(300px) } */
+}
